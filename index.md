@@ -14,8 +14,12 @@ From June 2020 to now, I am a Project Researcher at Computer Vision and Media La
 
 ### Honors
 
-1. 2018, China Scholarship Council Scholarships |中国留学基金委奖学金
+1. 2018, China Scholarship Council Scholarships (No: 20180616011) |中国留学基金委奖学金
 
 ### Projects
 1. 
 
+
+### Services
+1. Reviewer: ICME, ACMMM, Additive Manufacturing, and Journal of Computing and Information Science in Engineering.
+2. Session chair: ISM 2021 (Int. Symposium on Multimedia)
