@@ -6,7 +6,7 @@ From June 2020 to now, I am a Project Researcher at Computer Vision and Media La
 
 
 ### Publications
-
+1. Missing Small Fastener Detection Using Deep Learning
 
 ### Honors
 
