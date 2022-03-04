@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Ling Xiao
 
-You can use the [editor on GitHub](https://github.com/Dr-LingXiao/Dr-LingXiao.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+From June 2020 to now, I am a Project Researcher at Computer Vision and Media Lab, The University of Tokyo (東京大学), Japan. In Dec.2020, I received Ph.D. at Huazhong University of Science and Technology (华中科技大学). My research interests focus on anomaly dignosis, representation learning, fashion recommendation, and intelligent manufacturing.
 
 ### Markdown
 
