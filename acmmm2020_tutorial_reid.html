@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <title>Effective and Efficient: Toward Open-world Instance Re-identification</title>
+  </head>
+  <body>
+    <div class="container" style="max-width: 1000px;">
+      <div class="row mt-3">
+        <div class="col-sm-12">
+          <p class="lead mb-0"><a href="https://2020.acmmm.org/">ACM Multimedia 2020</a> Tutorial on</p>
+          <h1 class="display-4">Effective and Efficient: Toward Open-world Instance Re-identification</h1>
+          <!-- <img src="assets/images/teaser.png" class="img-fluid rounded mt-3">-->
+
+          <h2 class="mt-3">Overview</h2>
+          <p>
+			Instance re-identification (re-ID) is a multimedia technology that finds a certain person/vehicle/object of interest in a large amount of videos. 
+			It facilitates various applications that require painful and boring video watching, including searching for video shots related to 
+			an actor of interest from TV series, a lost child in a shopping mall from camera videos, a suspect vehicle from a city surveillance system. 
+			Its efficiency and effectiveness accelerate the process of video analysis. 
+			In recent years, existing technologies have only been evaluated on standard benchmarks. 
+			Although we have made significant advances in standard datasets, it is still far away to design an open-world re-identification system. 
+          </p>  
+
+          <p>
+            In this tutorial, we summarize re-ID technologies and provide an overview. 
+			We'll introduce fundamental technologies, existing challenges, trends, etc. 
+			This tutorial would be useful for the multimedia content analysis and system-level multimedia retrieval, 
+			especially for an effective and efficient open-world re-ID system for the practical, large-scale, and open-set domain. 
+
+            <ul>
+              <li>First, we will conduct a brief review for general person re-ID, 
+			  where the person's appearance variation, the short-term environment change and the intra-modality discrepancy work as the main challenge. 
+			  We will introduce <strong>new trends of person re-ID system</strong> that more practical in open-world conditions, consisting of group, long-term, and cross modality. 
+			  Representative approaches, comparisons and discussions will be given.</li>
+			  
+              <li>Second, <strong>vehicle re-ID</strong> aims to instantly discover, locate, and track the target vehicles in large-scale urban surveillance system. 
+			  We will survey the recent published massive vehicle re-ID datasets and deep learning vehicle re-ID methods, 
+			  describe critical future directions in progressive vehicle re-ID with multi-modality information, and brief some critical yet under-developed issues. </li>
+			
+              <li>Third, we will review state-of-the-art algorithms of <strong>approximate nearest neighbor search system</strong>. 
+			  The design of the search algorithm is critical for performance. 
+			  We will provide a practical guide to select the best algorithm for a given application system.</li>
+			  
+			  
+              <li>Finally, we will make a brief summary of instance re-ID, and show some trends of this task. 
+			  In particular, we will introduce the <strong>INstance Search (INS)</strong> task and our effort and insights on this task. </li>
+
+            </ul>
+          </p>
+
+          <h2 class="mt-3">Schedule</h2>
+          <dl>
+			<li class="mb-2">
+				An opening of the tutorial <a href="./file/acmmm-t-openning.pdf" class="badge badge-pill badge-success">slides</a>
+				<a href="https://www.youtube.com/watch?v=EKwIV_pcV7c" class="badge badge-pill badge-warning">video</a>
+			</li>
+			<li class="mb-2">
+				New trends of person re-ID system - <em class="font-weight-light">Zheng Wang</em> <a href="./file/acmmm-t-part1-person-re-ID.pdf" class="badge badge-pill badge-success">slides</a>
+				<a href="https://www.youtube.com/watch?v=0qJSqlMvwOk" class="badge badge-pill badge-warning">video</a>
+			</li>
+			<li class="mb-2">
+				Vehicle re-ID: past, present and future - <em class="font-weight-light">Wu Liu</em> <a href="./file/acmmm-t-part2-vehicle-re-ID.pdf" class="badge badge-pill badge-success">slides</a>
+				<a href="https://www.youtube.com/watch?v=z2YZXMgQxi4" class="badge badge-pill badge-warning">video</a>
+			</li>
+			<li class="mb-2">
+				Billion scale approximate nearest neighbor search - <em class="font-weight-light">Yusuke Matsui</em> <a href="./file/acmmm-t-part3-ann.pdf" class="badge badge-pill badge-success">slides</a>
+				<a href="https://www.youtube.com/watch?v=iI8e3kU11eU" class="badge badge-pill badge-warning">video</a>
+			</li>		
+			<li class="mb-2">
+				Is instance search a solved problem? - <em class="font-weight-light">Shin'ichi Satoh</em> <a href="./file/acmmm-t-part4-ins.pdf" class="badge badge-pill badge-success">slides</a>
+				<a href="https://www.youtube.com/watch?v=cH256Zqt5Ms" class="badge badge-pill badge-warning">video</a>
+			</li>
+          </dl>
+
+          <h2 class="mt-3">QA Time</h2>
+			<li class="mb-2">
+				<strong><STRIKE>Date: 2020.10.16</STRIKE> The sessions are over. If you have any questions, please drop an email to us. We appreciate your interest in this topic and expect collaboration of any kind.</strong>
+			</li>
+			<table class="table table-hover">
+				<tbody>
+					<tr class="table-success">
+					<th scope="row">Program</th>
+					<td>Zoom</td>
+					<td>New York | UTC-4</td>
+					<td>Beijing | UTC +8</td>
+					<td>Tokyo | UTC +9</td>
+					<td>Seattle | UTC -7</td>
+					<td>UTC</td>
+					</tr>
+					
+					<tr class="table-light">
+					<th scope="row"><STRIKE>QA</STRIKE></th>
+					<td><a href="https://zoom.us/j/99404245072?pwd=dUgvVXNoUDZjMXdWRFd3OFFJYzhyUT09">Link</a></td>
+					<td>9:00-10:00</td>
+					<td>21:00-22:00</td>
+					<td>22:00-23:00</td>
+					<td>6:00-7:00</td>
+					<td>13:00-14:00</td>
+					</tr>
+
+					<tr class="table-light">
+					<th scope="row"><STRIKE>QA - Mirrored</STRIKE></th>
+					<td><a href="https://zoom.us/j/92340268826?pwd=VFVKWnlOY052QUJZQnhSd2dUVURNUT09">Link</a></td>
+					<td>19:00-20:00</td>
+					<td>7:00-8:00 +1 Day</td>
+					<td>8:00-9:00 +1 Day</td>
+					<td>16:00-17:00</td>
+					<td>23:00-24:00</td>
+					</tr> 
+
+				</tbody>
+			</table> 
+          <h2 class="mt-3">Organizers</h2>
+          <div class="card-deck">
+		    <div class="card text-center border-0">
+              <img src="assets/images/zheng.jpg" class="card-img-top rounded">
+              <div class="card-body pt-3 pl-0 pr-0">
+                <h4 class="card-title mb-1"><a href="https://wangzwhu.github.io/home/">Zheng Wang</a></h4>
+                <p class="card-text font-weight-light">National Institute of Informatics</p>
+              </div>
+            </div>
+			
+			<div class="card text-center border-0">
+              <img src="assets/images/wu.jpg" class="card-img-top rounded">
+              <div class="card-body pt-3 pl-0 pr-0">
+                <h4 class="card-title mb-1"><a href="https://drliuwu.com/english.html">Wu Liu</a></h4>
+                <p class="card-text font-weight-light">AI Research of JD.com</p>
+              </div>
+            </div>
+			
+            <div class="card text-center border-0">
+              <img src="assets/images/yusuke.jpg" class="card-img-top rounded">
+              <div class="card-body pt-3 pl-0 pr-0">
+                <h4 class="card-title mb-1"><a href="http://yusukematsui.me">Yusuke Matsui</a></h4>
+                <p class="card-text font-weight-light">The University of Tokyo</p>
+              </div>
+            </div>
+
+			<div class="card text-center border-0">
+              <img src="assets/images/satoh.jpg" class="card-img-top rounded">
+              <div class="card-body pt-3 pl-0 pr-0">
+                <h4 class="card-title mb-1"><a href="http://www.satoh-lab.nii.ac.jp/index.html">Shin'ichi Satoh</a></h4>
+                <p class="card-text font-weight-light">National Institute of Informatics</p>
+              </div>
+            </div>
+			
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
