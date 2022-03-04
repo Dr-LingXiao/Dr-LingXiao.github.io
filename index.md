@@ -14,7 +14,7 @@ From June 2020 to now, I am a Project Researcher at Computer Vision and Media La
 
 ### Honors
 
-1. 2018, China Scholarship Council Scholarships (No: 20180616011) \|中国留学基金委奖学金
+1. 2018, China Scholarship Council Scholarships (No: 20180616011)
 
 ### Projects
 1. 
