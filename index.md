@@ -22,7 +22,8 @@ From June 2020 to now, I am a Project Researcher at Computer Vision and Media La
 1. 2018, China Scholarship Council Scholarships (No: 20180616011)
 
 ### Projects
-1. 
+1. UQ-NSRSU (NS-1803) grant:“additive manufacturing of advanced ceramic”  **Participate**.
+2. Automatic crane and steel roll localization using machine vision **In charge**.
 
 
 ### Services
