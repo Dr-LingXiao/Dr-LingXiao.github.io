@@ -1,6 +1,6 @@
 # Ling Xiao
 
-From June 2020 to now, I am a Project Researcher at Computer Vision and Media Lab, The University of Tokyo (東京大学), Japan. In Dec.2020, I received Ph.D. at Huazhong University of Science and Technology (华中科技大学), P.R. China. My research interests focus on anomaly dignosis, representation learning, fashion recommendation, and intelligent manufacturing.
+From June 2020, I am a Project Researcher at Computer Vision and Media Lab, The University of Tokyo (東京大学), Japan. In Dec.2020, I received Ph.D. at Huazhong University of Science and Technology (华中科技大学), P.R. China. My research interests focus on anomaly dignosis, representation learning, fashion recommendation, and intelligent manufacturing.
 
 
 ## Publications
