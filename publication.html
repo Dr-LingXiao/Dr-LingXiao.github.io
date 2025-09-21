@@ -3,532 +3,568 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <title>Ling Xiao's Homepage</title>
+    <title>Ling Xiao — Publications</title>
+
+    <!-- Bootstrap 4（如需本地文件，可换为 assets/css/bootstrap.min.css） -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <style>
+      :root { --brand: #0d6efd; }
+      body { line-height: 1.6; }
+
+      /* 胶囊导航，与站内其他页面统一 */
+      .navbar-wrap { max-width: 1200px; margin: 1.25rem auto; }
+      .navbar.navbar-pill { background:#0d6efd; border-radius:9999px; padding:.6rem 1rem; }
+      .navbar.navbar-pill .navbar-brand { color:#fff; font-weight:700; letter-spacing:.2px; }
+      .navbar.navbar-pill .nav-link { color:rgba(255,255,255,.9); }
+      .navbar.navbar-pill .nav-item.active .nav-link,
+      .navbar.navbar-pill .nav-link:hover { color:#fff; }
+
+      .page-title { font-weight:700; letter-spacing:.3px; }
+      .section-title { font-weight:700; font-size:1.1rem; letter-spacing:.3px; text-transform:uppercase; color:#6c757d; margin-bottom:.75rem; }
+      .card { border-radius:.75rem; }
+      .card + .card { margin-top:1rem; }
+      .row.gutter > [class*="col-"] { padding-left:15px; padding-right:15px; } /* Bootstrap4 无 g-4，用 padding 实现 */
+      footer { color:#6c757d; }
+      a[href^="http"] { word-break: break-word; }
+    </style>
   </head>
-  
 
   <body>
-    <div class="container" style="max-width: 1600px;">
-	
+    <div class="container" style="max-width:1180px;">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Ling Xiao</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <!-- PILL NAVBAR -->
+      <div class="navbar-wrap">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-pill shadow-sm">
+          <a class="navbar-brand" href="index.html">Ling Xiao</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                  aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-	  <li class="nav-item">
-        <a class="nav-link" href="project.html">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="publication.html">Publications</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="honor.html">Honors and fundings</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="activity.html">Services</a>
-      </li>
-		  <li class="nav-item">
-        <a class="nav-link" href="students.html">Students</a>
-      </li>
-			  <li class="nav-item">
-        <a class="nav-link" href="collaborators.html">Collaborators</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<br />
-<br />
-        <div class="row mb-3">
-            <div class="col-sm-12">
-                <!-- =========== Rich list =========== -->
-		    
-<h4>International Conferences (Peer-reviewed)</h4>
-<ul>	
-	<ol>
-				<li class="mb-2">
- <a href="">Incorporating Semantic Visual Content into Click-Through Rate Prediction for Video Advertisements</a>, 
-Y. Tanabe, S. Masuda, G. Ryu, N. Tanji, H. Seshime, <strong>L. Xiao</strong>, and T. Yamasaki,   
- <em><strong> The 17th Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC 2025)</strong></em>, accepted, 2025</a>
- </li>
-		
-		<li class="mb-2">
- <a href="">Combining Non-Numerical Text and Numerical Sequences in LLM-based Survival Prediction</a>, 
-Z. Zhou, G. Qian, X. Jiang, G. Wang, R. Lu, <strong>L. Xiao</strong>, and S. Tang,
- <em><strong> The 22nd Pacific Rim International Conference Series on Artificial Intelligence (PRICAI 2025)</strong></em>, accepted, 2025</a>
- </li>
-		
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-3">
+              <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+              <li class="nav-item active"><a class="nav-link" href="publication.html" aria-current="page">Publications</a></li>
+              <li class="nav-item"><a class="nav-link" href="honor.html">Honors &amp; Funding</a></li>
+              <li class="nav-item"><a class="nav-link" href="activity.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+              <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-		<li class="mb-2">
- <a href="https://ieeexplore.ieee.org/abstract/document/11099276">ActRecognition-GPT: Utilizing Multimodal Large Language Models for Spatiotemporal Action Recognition in Nursery Videos</a>, 
-  K. Watanabe, S. Masuda, <strong>L. Xiao</strong>, and T. Yamasaki,   
- <em><strong> The 1st International Workshop on Foundation, Multimodal Large Language and Generative Models for Face and Gesture Recognition (FM&LLM&GM 2025), the 19th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2025)</strong></em>, pp. 1-10, 2025</a>
- </li>
- 
+      <!-- PAGE TITLE -->
+      <h1 class="page-title mb-3">Publications</h1>
 
-		
-				<li class="mb-2">
- <a href="https://dl.acm.org/doi/abs/10.1145/3731715.3733450">TourMLLM: A Retrieval-Augmented Multimodal Large Language Model for Multitask Learning in the Tourism Domain</a>, 
-  H. Yamanishi, <strong>L. Xiao*[corresponding author]</strong>, and T. Yamasaki,   
- <em><strong> The 15th ACM International Conference on Multimedia Retrieval (ICMR)</strong></em>, pp. 1654-1663, 2025, <strong>Best paper award!</strong> </a>
- </li>
+      <!-- CONTENT -->
+      <div class="row gutter">
+        <div class="col-lg-12 mb-4">
 
-		<li class="mb-2">
- <a href="https://ieeexplore.ieee.org/document/11005132">Explainable AI for Image Aesthetic Evaluation Using Vision-Language Models</a>, 
- S. Viriyavisuthisakul, S.n Yoshida, K. Shiohara, <strong>L. Xiao</strong> and T. Yamasaki, 
- <em><strong> IEEE Conference on Artificial Intelligence x Multimedia (AIxMM)</strong></em>, pp. 62-65, 2025 </a>
- </li>
-		
-		<li class="mb-2">
- <a href="https://link.springer.com/chapter/10.1007/978-981-96-2061-6_20">LITA: LMM-guided Image-Text Alignment for Art Assessment</a>, 
- T. Sunada, K. Shiohara, <strong>L. Xiao</strong>, and T. Yamasaki,      
- <em><strong> 31st International Conference on MultiMedia Modeling (MMM25)</strong></em>, pp. 268-281, 2025 </a>
- </li>
-		<li class="mb-2">
- <a href="https://dl.acm.org/doi/full/10.1145/3696409.3700273">Language-Guided Self-Supervised Video Summarization Using Text Semantic Matching Considering the Diversity of the Video</a>, 
- T. Sugihara, S. Masuda, <strong>L. Xiao*[corresponding author]</strong>, and T. Yamasaki,      
- <em><strong> ACM Multimedia Asia 2024 </strong></em>, pp. 1-1, 2024 <a href="https://github.com/sugitomoo/PDL"> [Code] </a> </a>
- </li>
+          <!-- International Conferences -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">International Conferences (Peer-reviewed)</div>
+              <ol class="mb-0">
+                <li class="mb-2">
+                  <a href="#">Incorporating Semantic Visual Content into Click-Through Rate Prediction for Video Advertisements</a>,
+                  Y. Tanabe, S. Masuda, G. Ryu, N. Tanji, H. Seshime, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>The 17th Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC 2025)</strong></em>,
+                  accepted, 2025.
+                </li>
 
-		
-						<li class="mb-2">
- <a href="https://ieeexplore.ieee.org/document/10849859">LLaVA-Tour: A Large-Scale Multimodal Model Specializing in Japanese Tourist Spot Prediction and Review Generation</a>, 
- H. Yamanishi, <strong>L. Xiao*[corresponding author]</strong>, and T. Yamasaki,   
- <em><strong> IEEE International Conference on Visual Communications and Image Processing </strong></em>, pp. 1-5, 2024 [Best Paper Candidate]<a href="https://github.com/HiromasaYamanishi/LLaVATour"> [Code] </a> </a>
- </li>
-		
-				<li class="mb-2">
- <a href="https://ceur-ws.org/Vol-3886/paper6.pdf">A Multimodal Dataset and Benchmark for Tourism Review Generation</a>, 
- H. Yamanishi, <strong>L. Xiao*[corresponding author]</strong>, and T. Yamasaki,   
- <em><strong> ACM RecSys Workshop on Recommenders in Tourism (Rectour 2024)  </strong></em>, 2024 </a>
- </li>
-		
-		<li class="mb-2">
- <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06776.pdf">SCOMatch: Alleviating Overtrusting in Open-set Semi-supervised Learning</a>, 
- Z. R. Wang, L. Y. Xiang, L. Huang, J. F. Mao, <strong>L. Xiao</strong>, and T. Yamasaki, 
- <em><strong> European Conference on Computer Vision (ECCV)  </strong></em>, pp. 217-233, 2024 </a>
- </li>
-		
-		<li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10647958">Adversarially robust continual learning with anti-forgetting loss</a>, 
- K. Mukai, S. Kumano, N. Michel, <strong>L. Xiao</strong>, and T. Yamasaki, 
- <em><strong> IEEE International Conference on Image Processing (ICIP)  </strong></em>, pp. 1085-1091, 2024 </a>
- </li>
-		
-<li class="mb-2">
- <a href="https://link.springer.com/chapter/10.1007/978-3-031-70242-6_9">E-ReaRev: Adaptive Reasoning for Question Answering over Incomplete Knowledge Graphs by Edge and Meaning Extensions</a>, 
- X.T. Ye, <strong>L. Xiao</strong>, C. Zhang, and T. Yamasaki,   
- <em><strong> The 29th International Conference on Natural Language & Information Systems (NLDB)  </strong></em>, pp. 85-95, 2024 </a>
- </li>
-			
-<li class="mb-2">
- <a href="https://dl.acm.org/doi/abs/10.5555/3692070.3693520">Rethinking Momentum Knowledge Distillation in Online Continual Learning</a>, 
- N. Michel, M. Wang, <strong>L. Xiao</strong>, and T. Yamasaki,   
- <em><strong> International Conference on Machine Learning (ICML)  </strong></em>, pp. 35607-35622, 2024 <a href="https://github.com/Nicolas1203/mkd_ocl"> [Code] </a> </a>
- </li>
-		
-			<li class="mb-2">
- <a href="https://openaccess.thecvf.com/content/CVPR2024W/CVFAD/papers/Xiao_Boosting_Fine-grained_Fashion_Retrieval_with_Relational_Knowledge_Distillation_CVPRW_2024_paper.pdf">Boosting Fine-grained Fashion Retrieval with Relational Knowledge Distillation</a>, 
-  <strong>L. Xiao</strong> and T. Yamasaki,   
- <em><strong> The 7th Workshop on Computer Vision for Fashion, Art, and Design, IEEE / CVF Computer Vision and Pattern Recognition Conference (Spotlight and Poster)  </strong></em>, pp. 8229-8234, 2024 <a href="https://github.com/Dr-LingXiao/RKD"> [Code] </a>
- </li>
-	<li class="mb-2">
- <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_Improving_Plasticity_in_Online_Continual_Learning_via_Collaborative_Learning_CVPR_2024_paper.pdf">Improving Plasticity in Online Continual Learning via Collaborative Learning</a>, 
-  M. Wang, N. Michel, <strong>L. Xiao</strong>, and T. Yamasaki,   
- <em><strong> The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)  </strong></em>, pp. 23460-23469, 2024 <a href="https://github.com/maorong-wang/CCL-DC"> [Code] </a>
- </li>
-	
-	<li class="mb-2">
- <a href="https://dl.acm.org/doi/pdf/10.1145/3655755.3655770">HetSpot: Analyzing Tourist Spot Popularity with Heterogeneous Graph Neural Network</a>, 
- H. Yamanishi, <strong>L. Xiao*[corresponding author]</strong>, and T. Yamasaki,   
- <em><strong> 6th International Conference on Image, Video and Signal Processing (IVSP) </strong></em>, pp. 111–120, 2024
- </li>
-	
+                <li class="mb-2">
+                  <a href="#">Combining Non-Numerical Text and Numerical Sequences in LLM-based Survival Prediction</a>,
+                  Z. Zhou, G. Qian, X. Jiang, G. Wang, R. Lu, <strong>L. Xiao</strong>, and S. Tang,
+                  <em><strong>The 22nd Pacific Rim International Conference Series on Artificial Intelligence (PRICAI 2025)</strong></em>,
+                  accepted, 2025.
+                </li>
 
-	<li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10254418">Toward a More Robust Fine-grained Fashion Retrieval</a>, 
- <strong>L. Xiao</strong>, X. F. Zhang, and T. Yamasaki,   
- <em><strong> IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR) </strong></em>, pp. 1-4, 2023 <a href="https://github.com/Dr-LingXiao/GD"> [Code] </a>
- </li>
-	<li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10254405">Learning Fashion Compatibility with Color Distortion Prediction</a>, 
- <strong>L. Xiao</strong>, X. F. Zhang, and T. Yamasaki,    
- <em><strong>IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR) </strong></em>, pp. 81-84, 2023
- </li>
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/abstract/document/11099276">ActRecognition-GPT: Utilizing Multimodal Large Language Models for Spatiotemporal Action Recognition in Nursery Videos</a>,
+                  K. Watanabe, S. Masuda, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>FM&LLM&GM 2025 (FG 2025 Workshop)</strong></em>, pp. 1–10, 2025.
+                </li>
 
-	<li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10254426">Bridging the Capacity Gap for Online Knowledge Distillation</a>, 
-M. Wang, H. Yu, <strong>L. Xiao</strong>, and T. Yamasaki,   
- <em><strong>IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR) </strong></em>, pp. 1-4, 2023 <a href="https://github.com/maorong-wang/ABML"> [Code] </a>
- </li>
-	
- <li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9897313">SAT: Self-adaptive training for fashion compatibility prediction</a>, 
- <strong>L. Xiao</strong> and T. Yamasaki,  
- <em><strong>IEEE International Conference on Image Processing (ICIP)</strong></em>, pp. 2431-2435, 2022
- </li>
+                <li class="mb-2">
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3731715.3733450">TourMLLM: A Retrieval-Augmented Multimodal Large Language Model for Multitask Learning in the Tourism Domain</a>,
+                  H. Yamanishi, <strong>L. Xiao*</strong> (corresponding author), and T. Yamasaki,
+                  <em><strong>ICMR</strong></em>, pp. 1654–1663, 2025, <strong>Best paper award!</strong>
+                </li>
 
- <li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8843235">Surface defect detection using hierarchical features</a>, 
- <strong>L. Xiao</strong>, T. Huang, B. Wu, Y. Hu, and J. Zhou,
- <em><strong>International Conference on Automation Science and Engineering</strong></em>, pp. 1592-1596, 2019
- </li>	
-	
- <li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7959483">A remote health condition monitoring system based on compressed sensing</a>, 
- J. Liu, Y. Hu, Y. Lu, Y. Wang, <strong>L. Xiao</strong>, and K. Zheng,
- <em><strong>International Conference on Mechanical, System and Control Engineering</strong></em>, pp. 262-266, 2017
- </li>	
-	</ol>
- 
-</ul>		    
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/document/11005132">Explainable AI for Image Aesthetic Evaluation Using Vision-Language Models</a>,
+                  S. Viriyavisuthisakul, S.n Yoshida, K. Shiohara, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>AIxMM</strong></em>, pp. 62–65, 2025.
+                </li>
 
-<h4>International Journals (Peer-reviewed)</h4>
-<ul>	
-	<ol>
-				<li class="mb-2">
- <a href="https://www.computer.org/csdl/journal/ai/5555/01/10908573/24HXWjMwwww">GeoDCL: Weak Geometrical Distortion based Contrastive Learning for Fine-grained Fashion Image Retrieval</a>, 
-  <strong>L. Xiao</strong> and T. Yamasaki,    
- <em><strong>IEEE Transactions on Artificial Intelligence</strong></em>, vol.1, pp. 1-13, 2025.
- </li>
-		<li class="mb-2">
- <a href="https://www.sciencedirect.com/science/article/pii/S0950705125000036">Multi-level Knowledge Distillation for Fine-grained Fashion Image Retrieval</a>, 
-  <strong>L. Xiao</strong> and T. Yamasaki,    
- <em><strong>Knowledge-Based Systems</strong></em>, vol.310, p.112955, 2025.
- </li>
-		
-		<li class="mb-2">
- <a href="https://www.sciencedirect.com/science/article/pii/S0950705124011547"> LiFSO-Net: A Lightweight Feature Screening Optimization Network for Complex-scale Flat Metal Defect Detection</a>, 
-  Hao Zhong, <strong>L. Xiao</strong>, Haifeng Wang, Xin Zhang, Chenhui Wan, and Bo Wu.   
- <em><strong>Knowledge-Based Systems</strong></em>, vol.304, pp.112520, 2024.
- </li>
-<li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10486897">Attribute-Guided Multi-Level Attention Network for Fine-Grained Fashion Retrieval</a>, 
-  <strong>L. Xiao</strong> and T. Yamasaki,   
- <em><strong>IEEE Access</strong></em>, vol.12, pp.48068-48080, 2024 <a href="https://github.com/Dr-LingXiao/AG-MAN"> [Code] </a>
- </li>
-	
-	<li class="mb-2">
-	<a href="https://www.sciencedirect.com/science/article/pii/S1474034624000855"> STFE-Net: A multi-stage approach to enhance statistical texture feature for defect detection on metal surfaces</a>, 
-		H. Zhong, D. X. Fu, <strong>L. Xiao</strong>, F. Zhao, J. Liu, B. Wu, and Y. M. Hu,
-		<em><strong>Advanced Engineering Informatics</strong></em>, vol.61, pp.102437, 2024 
- </li>
- <li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9200684">Missing small fastener detection using deep learning</a>, 
- <strong>L. Xiao</strong>, B. Wu, and Y. Hu,  
- <em><strong>IEEE Transactions on Instrumentation and Measurement</strong></em>, vol.70, pp.1-9, 2020
- </li>
+                <li class="mb-2">
+                  <a href="https://link.springer.com/chapter/10.1007/978-981-96-2061-6_20">LITA: LMM-guided Image-Text Alignment for Art Assessment</a>,
+                  T. Sunada, K. Shiohara, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>MMM 2025</strong></em>, pp. 268–281, 2025.
+                </li>
 
- <li class="mb-2">
- <a href="https://www.sciencedirect.com/science/article/pii/S104732032030153X">OSED: Object-specific edge detection</a>, 
- <strong>L. Xiao</strong>, B. Wu, and Y. Hu,
- <em><strong>Journal of Visual Communication and Image Representation</strong></em>, vol.72, pp.102918, 2020
- </li>
-	
- <li class="mb-2">
- <a href="https://link.springer.com/article/10.1007/s00170-020-05205-0">Detection of powder bed defects in selective laser sintering using convolutional neural network</a>, 
- <strong>L. Xiao</strong>, M. Lu, and H. Huang,
- <em><strong>The International Journal of Advanced Manufacturing Technology</strong></em>, vol.107, pp.2485-2496, 2020
- </li>	
+                <li class="mb-2">
+                  <a href="https://dl.acm.org/doi/full/10.1145/3696409.3700273">Language-Guided Self-Supervised Video Summarization Using Text Semantic Matching Considering the Diversity of the Video</a>,
+                  T. Sugihara, S. Masuda, <strong>L. Xiao*</strong>, and T. Yamasaki,
+                  <em><strong>ACM Multimedia Asia 2024</strong></em>, pp. 1–1, 2024.
+                  <a href="https://github.com/sugitomoo/PDL">[Code]</a>
+                </li>
 
- <li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8908783">A hierarchical features-based model for freight train defect inspection</a>, 
- <strong>L. Xiao</strong>, B. Wu, Y. Hu, and J. Liu,
- <em><strong>IEEE Sensors Journal</strong></em>, vol.20(5), pp.2671-2678, 2019
- </li>	
-	
- <li class="mb-2">
- <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9019620">Surface defect detection using image pyramid</a>, 
- <strong>L. Xiao</strong>, B. Wu, and Y. Hu,
- <em><strong>IEEE Sensors Journal</strong></em>, vol.20(13), pp.7181-7188, 2020
- </li>	
-	</ol>
- 
-</ul>		    
-<h4>Arxiv papers</h4>
-	<ul>	
-		<ol>    
-			<li class="mb-2">
- <a href="https://arxiv.org/abs/2503.01236">LLM-Advisor: An LLM Benchmark for Cost-efficient Path Planning across Multiple Terrains</a>, 
- <strong>L. Xiao</strong> and T. Yamasaki,    
- <em><strong>arXiv preprint arXiv:2503.01236.</strong></em>, 2025
- </li>	 
-			 <li class="mb-2">
- <a href="https://arxiv.org/abs/2503.01236">LLM-Advisor: An LLM Benchmark for Cost-efficient Path Planning across Multiple Terrains</a>, 
- <strong>L. Xiao</strong> and T. Yamasaki,    
- <em><strong>arXiv:2503.01236</strong></em>, 2025
- </li>	 
-			
-		 <li class="mb-2">
- <a href="https://arxiv.org/pdf/2405.08890">Language-Guided Self-Supervised Video Summarization Using Text Semantic Matching Considering the Diversity of the Video</a>, 
- T. Sugihara, S. Masuda, <strong>L. Xiao</strong>, and T. Yamasaki,   
- <em><strong>arXiv preprint arXiv:2405.08890</strong></em>, 2024
- </li>	 
-		    	<li class="mb-2">
- <a href="https://arxiv.org/pdf/2309.02870">Rethinking Momentum Knowledge Distillation in Online Continual Learning</a>, 
- N. Michel, M. Wang, <strong>L. Xiao</strong>, and T. Yamasaki,   
- <em><strong>arXiv preprint arXiv:2309.02870.</strong></em>, 2023 
- </li>
-		    <li class="mb-2">	    
- <a href="https://arxiv.org/pdf/2305.13802">Online Open-set Semi-supervised Object Detection via Semi-supervised Outlier Filtering</a>, 
- Z. Wang, <strong>L. Xiao</strong>, L. Xiang, Z. Weng, and T. Yamasaki,   
- <em><strong>arXiv preprint arXiv:2305.13802.</strong></em>, 2023
- </li>
- <li class="mb-2">
- <a href="https://arxiv.org/pdf/2303.07951.pdf">MetaMixer: A Regularization Strategy for Online Knowledge Distillation</a>, 
- M. Wang, <strong>L. Xiao</strong> and T. Yamasaki,  
- <em><strong>arXiv preprint arXiv:2303.07951.</strong></em>, 2023
- </li>
-		
- <li class="mb-2">
- <a href="https://arxiv.org/pdf/2212.14680.pdf">Semi-supervised Fashion Compatibility Prediction by Color Distortion Prediction</a>, 
- <strong>L. Xiao</strong> and T. Yamasaki,  
- <em><strong>arXiv preprint arXiv:2212.14680.</strong></em>, 2022
- </li>
-	
- <li class="mb-2">
- <a href="https://arxiv.org/pdf/2301.13014.pdf">Attribute-Guided Multi-Level Attention Network for Fine-Grained Fashion Retrieval</a>, 
- <strong>L. Xiao</strong> and T. Yamasaki,  
- <em><strong>arXiv preprint arXiv:2301.13014.</strong></em>, 2022
- </li>
-			</ul>	
-		</ol>		
-				<h4>Domestic conferences</h4>	
-				<ul>	 
-					<ol>
-					<li class="mb-2">
-					 <a href="">Enhancing the Spatial Awareness of Large Language Models in Path Planning</a>, 
-					 <strong>Ling Xiao</strong> and Toshihiko Yamasaki,
-					 <em><strong> 第30回 知能メカトロニクスワークショップ2025 (iMec)</strong></em>, 2025.
-					 </li>
-						
-						
-					<li class="mb-2">
-					 <a href="">Few-shot推論によるアノテータに個人適応可能なビデオ要約</a>, 
-					杉原朋弥, 増田俊太郎, <strong>肖玲</strong>, 山崎俊彦,
-					 <em><strong> The 28th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, IS3-102, 2025.
-					 </li>
-						
-					<li class="mb-2">
-					 <a href="">時空間情報を統合したプロンプトを用いた保育施設映像の行動認識</a>, 
-					渡辺健太, 増田俊太郎, <strong>肖玲</strong>, 山崎俊彦,
-					 <em><strong> The 28th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, IS2-081, 2025.
-					 </li>
-						
-					<li class="mb-2">
-					 <a href="">LLM-Advisor: Leveraging LLMs as Advisors for Cost-efficient Path Planning Across Diverse Terrains</a>, 
-					 <strong>Ling Xiao</strong> and Toshihiko Yamasaki,
-					 <em><strong> The 28th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, IS2-185, 2025.
-					 </li>
-					<li class="mb-2">
-					 <a href="">TourMLLM: 検索拡張大規模観光マルチモーダルモデル</a>, 
-					 山西博雅, <strong>Ling Xiao</strong>, 山崎俊彦,
-					 <em><strong> The 28th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, IS2-119, 2025.
-					 </li>
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/document/10849859">LLaVA-Tour: A Large-Scale Multimodal Model Specializing in Japanese Tourist Spot Prediction and Review Generation</a>,
+                  H. Yamanishi, <strong>L. Xiao*</strong>, and T. Yamasaki,
+                  <em><strong>VCIP 2024</strong></em>, pp. 1–5, 2024. [Best Paper Candidate]
+                  <a href="https://github.com/HiromasaYamanishi/LLaVATour">[Code]</a>
+                </li>
 
-					<li class="mb-2">
-					 <a href="">基盤モデルによる視覚的評価を用いた動画広告の効果分析</a>, 
-					田邉克晃, 増田俊太郎, 劉岳松, 丹治直人, 勢〆弘幸, <strong>肖玲</strong>, 山崎俊彦,
-					 <em><strong> The 28th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, OS2C-06, 2025. [Oral]
-					 </li>
-						
-					<li class="mb-2">
-					 <a href="">Content-Aware Layout Generation with Large Language Models</a>, 
-					 Chen FU, Naoto Tanji, Gakumatsu Ryu, Hiroyuki SESHIME, Shengzhou Yi, <strong>Ling Xiao</strong>, and Toshihiko Yamasaki,
-					 <em><strong> The 28th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, IS1-102, 2025.  
-					 </li>
-						
-							<li class="mb-2">
-					 <a href="">タスク適応的検索拡張学習に基づく観光特化大規模マルチモーダルモデル</a>, 
-					 山西博雅, <strong>肖　玲</strong>, 山崎俊彦
-					 <em><strong> 信学技報, 画像工学研究会 (IE)</strong></em>, IE2024-61
-					 </li>
-						
-						<li class="mb-2">
-					 <a href="">Explainable Image Aesthetic Assessment Leveraging Vision-Language Models</a>, 
-					  S. Viriyavisuthisakul, S.n Yoshida, K. Shiohara, <strong>L. Xiao</strong> and T. Yamasaki,  
-					 <em><strong> 信学技報, 画像工学研究会 (IE)</strong></em>, IE2024-66
-					 </li>
+                <li class="mb-2">
+                  <a href="https://ceur-ws.org/Vol-3886/paper6.pdf">A Multimodal Dataset and Benchmark for Tourism Review Generation</a>,
+                  H. Yamanishi, <strong>L. Xiao*</strong>, and T. Yamasaki,
+                  <em><strong>ACM RecSys Workshop on Recommenders in Tourism (RecTour 2024)</strong></em>, 2024.
+                </li>
 
-						
-						<li class="mb-2">
-					 <a href="">Momentum Knowledge Distillation for Enhanced Online Continual Learning</a>, 
-					  N. Michel, M. Wang, <strong>L. Xiao</strong>, and T. Yamasaki,   
-					 <em><strong> 信学技報, 画像工学研究会 (IE)</strong></em>, IE2024-57
-					 </li>
-						
-							<li class="mb-2">
-					 <a href="">Llava-Planner: Enhancing Spatial Awareness of LLaVA for Cost-Effective Path Planning</a>, 
-					  <strong>L. Xiao</strong>, H. Yamanishi, and T. Yamasaki,
-					 <em><strong> 信学技報, 画像工学研究会 (IE)</strong></em>, IE2024-44
-					 </li>
-						
-                                                <li class="mb-2">
-						 <a href="">LLM-Advisor: A LLM Benchmark for Cost-effective Path Planning</a>, 
-						  <strong>L. Xiao</strong> and T. Yamasaki,   
-						 <em><strong> PCSJ/IMPS2024 </strong></em>, P-2-05, 2024 </a>
-						 </li>
-						      <li class="mb-2">
-						 <a href="">マルチモーダル観光レビュー生成データセットと大規模レビュー生成モデルの作成</a>, 
-						  H. Yamanishi, <strong>L. Xiao</strong>, and T. Yamasaki,     
-						 <em><strong> PCSJ/IMPS2024 </strong></em>, P-4-18, 2024 </a>
-						 </li>
-						
-						<li class="mb-2">
-						 <a href="">Boosting Fine-grained Fashion Retrieval with Relational Knowledge Distillation</a>, 
-						  <strong>L. Xiao</strong> and T. Yamasaki,   
-						 <em><strong> 信学技報, 画像工学研究会 (IE) </strong></em>, vol. 124, no. 60, IE2024-17, pp. 90-94, 2024 <a href="https://github.com/Dr-LingXiao/RKD"> [Code] </a>
-						 </li>
-						<li class="mb-2">
-					 <a href="">Language-Guided Self-Supervised Video Summarization Using Text Semantic Matching</a>, 
-					 T. Sugihara, S. Masuda, <strong>L. Xiao</strong>, and T. Yamasaki,  
-					 <em><strong> The 27th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, 2024. [Oral]
-					 </li>
+                <li class="mb-2">
+                  <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06776.pdf">SCOMatch: Alleviating Overtrusting in Open-set Semi-supervised Learning</a>,
+                  Z. R. Wang, L. Y. Xiang, L. Huang, J. F. Mao, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>ECCV 2024</strong></em>, pp. 217–233, 2024.
+                </li>
 
-							<li class="mb-2">
-					 <a href="">大規模マルチモーダルモデルを用いた広告画像の評価・改善</a>, 
-					 砂田 達巳, 塩原 楓, 劉 岳松, 丹治 直人, 勢〆 弘幸, <strong>肖玲</strong>,山崎 俊彦,
-					 <em><strong> The 27th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, 2024. [Oral]
-					 </li>
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10647958">Adversarially Robust Continual Learning with Anti-forgetting Loss</a>,
+                  K. Mukai, S. Kumano, N. Michel, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>ICIP 2024</strong></em>, pp. 1085–1091, 2024.
+                </li>
 
-						<li class="mb-2">
-					 <a href="">Multi-hop Question Answering over Incomplete Knowledge Graphs by Edge and Meaning Extensions</a>, 
-					 X.T. Ye, <strong>L. Xiao</strong>, C. Zhang, and T. Yamasaki,   
-					 <em><strong> The 27th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, 2024. 
-					 </li>
+                <li class="mb-2">
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-031-70242-6_9">E-ReaRev: Adaptive Reasoning for Question Answering over Incomplete Knowledge Graphs by Edge and Meaning Extensions</a>,
+                  X.T. Ye, <strong>L. Xiao</strong>, C. Zhang, and T. Yamasaki,
+                  <em><strong>NLDB 2024</strong></em>, pp. 85–95, 2024.
+                </li>
 
-						<li class="mb-2">
-					 <a href="">Constrianed advertisement layout generation based on Graph Neural Networks</a>, 
-					 C. Fu, Y. Liu, N. Tanji, H. Seshime, S. Yi, <strong>L. Xiao</strong>, and T. Yamasaki,  
-					 <em><strong> The 27th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, 2024. 
-					 </li>
-						
-					<li class="mb-2">
-					 <a href="">Improving Adversarial Robustness in Continual Learning</a>, 
-					 K. Mukai, S. Kumano, N. Michel, <strong>L. Xiao</strong>, and T. Yamasaki,   
-					 <em><strong> 信学技報, 画像工学研究会 (IE)</strong></em>, vol.123, no.381, IE2023-37, pp.13-18, 2024. [IE賞]
-					 </li>
-					<li class="mb-2">
-					 <a href="">大規模言語モデルを活用した自己教師あり学習によるビデオ要約</a>, 
-					 杉原朋弥, 増田俊太郎, <strong>肖玲</strong>, 山崎俊彦,   
-					 <em><strong> IPSJ</strong></em>, 7T-06, pp.2-653-2-654, 2024. 
-					 </li>
-						<li class="mb-2">
-					 <a href="">Advertisement Layout Generation based on Graph Neural Network</a>, 
-					 C. Fu, Y. Liu, N. Tanji, H. Seshime, <strong>L. Xiao</strong>, and T. Yamasaki,   
-					 <em><strong> 信学技報, 画像工学研究会 (IE)</strong></em>, vol. 123, no. 381, IE2023-51, pp. 88-89, 2024.
-					 </li>
-						
-					<li class="mb-2">
-					 <a href="">Improved Fine-grained Fashion Retrieval with Contrastive Learning</a>, 
-					 <strong>L. Xiao</strong>, X. F. Zhang, and T. Yamasaki,   
-					 <em><strong> The 26th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, IS3-55, 2023.
-					 </li>
-					
-					<li class="mb-2">
-					 <a href="">Video Summarization Based on Masked Autoencoder</a>, 
-					 M. L. A. FOK, <strong>L. Xiao</strong>, and T. Yamasaki,   
-					 <em><strong> The 26th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, IS1-84, 2023.
-					 </li>
-					
-					<li class="mb-2">
-					 <a href="">Improving Fashion Compatibility Prediction with Color Distortion Prediction</a>, 
-					 <strong>L. Xiao</strong>, and T. Yamasaki,   
-					 <em><strong> 信学技報, 画像工学研究会 (IE)</strong></em>, vol. 122, no. 385, IE2022-61, pp. 17-18, 2023.
-					 </li>
-					 <li class="mb-2">
-					 <a href="">Multi-Level Attention Network for Fine-Grained Fashion Retrieval</a>, 
-					 <strong>L. Xiao</strong> and T. Yamasaki,  
-					 <em><strong> 信学技報, MVE</strong></em>, vol. 122, no. 440, MVE2022-90, pp. 198-199, 2023
-					 </li>
-					 <li class="mb-2">
-					 <a href="">SAT: Self-adaptive training for fashion compatibility prediction</a>, 
-					 <strong>L. Xiao</strong> and T. Yamasaki,  
-					 <em><strong> The 25th Meeting on Image Recognition and Understanding (MIRU)</strong></em>, 2022
-					 </li>
-				        <li class="mb-2">
-						<a href="">Spatial Attention Based Fashion Compatibility Prediction</a>, 
-						<strong>L. Xiao</strong> and T. Yamasaki,  
-						<em><strong>PCSJ/IMPS2021</strong></em>, P-3-17, pp. 135-136, 2021
+                <li class="mb-2">
+                  <a href="https://dl.acm.org/doi/abs/10.5555/3692070.3693520">Rethinking Momentum Knowledge Distillation in Online Continual Learning</a>,
+                  N. Michel, M. Wang, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>ICML 2024</strong></em>, pp. 35607–35622, 2024.
+                  <a href="https://github.com/Nicolas1203/mkd_ocl">[Code]</a>
+                </li>
 
-					</li>
+                <li class="mb-2">
+                  <a href="https://openaccess.thecvf.com/content/CVPR2024W/CVFAD/papers/Xiao_Boosting_Fine-grained_Fashion_Retrieval_with_Relational_Knowledge_Distillation_CVPRW_2024_paper.pdf">Boosting Fine-grained Fashion Retrieval with Relational Knowledge Distillation</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>CVPR 2024 Workshop (CVFAD)</strong></em>, pp. 8229–8234, 2024.
+                  <a href="https://github.com/Dr-LingXiao/RKD">[Code]</a>
+                </li>
 
-                    			<li class="mb-2">
-						<a href="">Design and Analysis of Attention-Aware Embedding Network for Fashion Compatibility Prediction</a>, 
-						<strong>L. Xiao</strong> and T. Yamasaki,  
-						<em><strong>ITE 冬季大会</strong></em>, 21A-6, 2021
-					</li>
-					</ol>
-                    			
-			</ul>
-				<h4>Patents (China)</h4>
-						<ul>
-							<ol>
-													 <li class="mb-2">
-						 <a href="">一种用于静脉穿刺的穿刺靶点识别与定位方法</a>, 
-						 <strong>肖玲</strong>、欧阳浩、叶霖、韩斌、陈学东、杨新
-						 <em><strong>发明专利 专利号: 202210202422 .1 申请中</strong></em>
-						 </li>
-											 <li class="mb-2">
-						 <a href="">一种钢卷双目视觉定位方法及设备</a>, 
-						 胡友民、<strong>肖玲</strong>、吴波
-						 <em><strong>发明专利 专利号: 201810094718 .X, 授权日：2020.09.18</strong></em>
-						 </li>
-								 <li class="mb-2">
-						 <a href="">一种基于视觉的钢卷定位方法及设备</a>, 
-						 胡友民、<strong>肖玲</strong>、吴波
-						 <em><strong>发明专利 专利号: 201811059328 .5, 授权日：2020.07.10</strong></em>
-						 </li>
-								
-						 <li class="mb-2">
-						 <a href="">一种可视化的起重机吊取定位系统</a>, 
-						 胡友民、<strong>肖玲</strong>、吴波、刘颉 
-						 <em><strong>发明专利 专利号: 201611246219.5, 授权日：2018.01.02</strong></em>
-						 </li>
+                <li class="mb-2">
+                  <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_Improving_Plasticity_in_Online_Continual_Learning_via_Collaborative_Learning_CVPR_2024_paper.pdf">Improving Plasticity in Online Continual Learning via Collaborative Learning</a>,
+                  M. Wang, N. Michel, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>CVPR 2024</strong></em>, pp. 23460–23469, 2024.
+                  <a href="https://github.com/maorong-wang/CCL-DC">[Code]</a>
+                </li>
 
-						 <li class="mb-2">
-						 <a href="">一种焊接熔池动态过程的在线监测系统及方法</a>, 
-						 胡友民、刘颉、<strong>肖玲</strong>、唐松、谷勇
-						 <em><strong>发明专利，专利号: 201610288460.8, 授权日：2018.06.12</strong></em>
-						 </li>
+                <li class="mb-2">
+                  <a href="https://dl.acm.org/doi/pdf/10.1145/3655755.3655770">HetSpot: Analyzing Tourist Spot Popularity with Heterogeneous Graph Neural Network</a>,
+                  H. Yamanishi, <strong>L. Xiao*</strong>, and T. Yamasaki,
+                  <em><strong>IVSP 2024</strong></em>, pp. 111–120, 2024.
+                </li>
 
-						 <li class="mb-2">
-						 <a href="">一种用于焊接熔池在线监测平台的多功能夹具</a>, 
-						 胡友民、唐松、<strong>肖玲</strong>、谷勇、刘颉
-						 <em><strong>实用新型专利，专利号: 201620434683.6, 授权日：2016.10.05</strong></em>
-						 </li>	
-								 <li class="mb-2">
-						 <a href="">一种针对光流图的快速的FCM图像分割方法</a>, 
-						 胡友民、胡中旭、吴波、武敏健、刘颉、<strong>肖玲</strong>、王诗杰、李雪莲
-						 <em><strong>发明专利，专利号: 201710530461.3, 授权日：2019.11.12</strong></em> 
-									 <strong>(2023年度湖北省科学技术奖提名)</strong>
-						 </li>	
-								
-							</ol>
-						</ul>	
-		    
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10254418">Toward a More Robust Fine-grained Fashion Retrieval</a>,
+                  <strong>L. Xiao</strong>, X. F. Zhang, and T. Yamasaki,
+                  <em><strong>MIPR 2023</strong></em>, pp. 1–4, 2023.
+                  <a href="https://github.com/Dr-LingXiao/GD">[Code]</a>
+                </li>
 
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10254405">Learning Fashion Compatibility with Color Distortion Prediction</a>,
+                  <strong>L. Xiao</strong>, X. F. Zhang, and T. Yamasaki,
+                  <em><strong>MIPR 2023</strong></em>, pp. 81–84, 2023.
+                </li>
 
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10254426">Bridging the Capacity Gap for Online Knowledge Distillation</a>,
+                  M. Wang, H. Yu, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>MIPR 2023</strong></em>, pp. 1–4, 2023.
+                  <a href="https://github.com/maorong-wang/ABML">[Code]</a>
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9897313">SAT: Self-adaptive Training for Fashion Compatibility Prediction</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>ICIP 2022</strong></em>, pp. 2431–2435, 2022.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8843235">Surface Defect Detection Using Hierarchical Features</a>,
+                  <strong>L. Xiao</strong>, T. Huang, B. Wu, Y. Hu, and J. Zhou,
+                  <em><strong>CASE 2019</strong></em>, pp. 1592–1596, 2019.
+                </li>
+
+                <li class="mb-0">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7959483">A Remote Health Condition Monitoring System Based on Compressed Sensing</a>,
+                  J. Liu, Y. Hu, Y. Lu, Y. Wang, <strong>L. Xiao</strong>, and K. Zheng,
+                  <em><strong>MSCE 2017</strong></em>, pp. 262–266, 2017.
+                </li>
+              </ol>
             </div>
+          </div>
+
+          <!-- International Journals -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">International Journals (Peer-reviewed)</div>
+              <ol class="mb-0">
+                <li class="mb-2">
+                  <a href="https://www.computer.org/csdl/journal/ai/5555/01/10908573/24HXWjMwwww">GeoDCL: Weak Geometrical Distortion based Contrastive Learning for Fine-grained Fashion Image Retrieval</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>IEEE Transactions on Artificial Intelligence</strong></em>, vol. 1, pp. 1–13, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0950705125000036">Multi-level Knowledge Distillation for Fine-grained Fashion Image Retrieval</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>Knowledge-Based Systems</strong></em>, vol. 310, p. 112955, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0950705124011547">LiFSO-Net: A Lightweight Feature Screening Optimization Network for Complex-scale Flat Metal Defect Detection</a>,
+                  Hao Zhong, <strong>L. Xiao</strong>, Haifeng Wang, Xin Zhang, Chenhui Wan, and Bo Wu,
+                  <em><strong>Knowledge-Based Systems</strong></em>, vol. 304, p. 112520, 2024.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10486897">Attribute-Guided Multi-Level Attention Network for Fine-Grained Fashion Retrieval</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>IEEE Access</strong></em>, vol. 12, pp. 48068–48080, 2024.
+                  <a href="https://github.com/Dr-LingXiao/AG-MAN">[Code]</a>
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://www.sciencedirect.com/science/article/pii/S1474034624000855">STFE-Net: A Multi-stage Approach to Enhance Statistical Texture Feature for Defect Detection on Metal Surfaces</a>,
+                  H. Zhong, D. X. Fu, <strong>L. Xiao</strong>, F. Zhao, J. Liu, B. Wu, and Y. M. Hu,
+                  <em><strong>Advanced Engineering Informatics</strong></em>, vol. 61, p. 102437, 2024.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9200684">Missing Small Fastener Detection Using Deep Learning</a>,
+                  <strong>L. Xiao</strong>, B. Wu, and Y. Hu,
+                  <em><strong>IEEE Transactions on Instrumentation and Measurement</strong></em>, vol. 70, pp. 1–9, 2020.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://www.sciencedirect.com/science/article/pii/S104732032030153X">OSED: Object-specific Edge Detection</a>,
+                  <strong>L. Xiao</strong>, B. Wu, and Y. Hu,
+                  <em><strong>Journal of Visual Communication and Image Representation</strong></em>, vol. 72, p. 102918, 2020.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://link.springer.com/article/10.1007/s00170-020-05205-0">Detection of Powder Bed Defects in Selective Laser Sintering Using Convolutional Neural Network</a>,
+                  <strong>L. Xiao</strong>, M. Lu, and H. Huang,
+                  <em><strong>International Journal of Advanced Manufacturing Technology</strong></em>, vol. 107, pp. 2485–2496, 2020.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8908783">A Hierarchical Features-based Model for Freight Train Defect Inspection</a>,
+                  <strong>L. Xiao</strong>, B. Wu, Y. Hu, and J. Liu,
+                  <em><strong>IEEE Sensors Journal</strong></em>, vol. 20(5), pp. 2671–2678, 2019.
+                </li>
+
+                <li class="mb-0">
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9019620">Surface Defect Detection Using Image Pyramid</a>,
+                  <strong>L. Xiao</strong>, B. Wu, and Y. Hu,
+                  <em><strong>IEEE Sensors Journal</strong></em>, vol. 20(13), pp. 7181–7188, 2020.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- ArXiv Papers -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">arXiv Papers</div>
+              <ol class="mb-0">
+                <li class="mb-2">
+                  <a href="https://arxiv.org/abs/2503.01236">LLM-Advisor: An LLM Benchmark for Cost-efficient Path Planning across Multiple Terrains</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>arXiv:2503.01236</strong></em>, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://arxiv.org/pdf/2405.08890">Language-Guided Self-Supervised Video Summarization Using Text Semantic Matching Considering the Diversity of the Video</a>,
+                  T. Sugihara, S. Masuda, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>arXiv:2405.08890</strong></em>, 2024.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://arxiv.org/pdf/2309.02870">Rethinking Momentum Knowledge Distillation in Online Continual Learning</a>,
+                  N. Michel, M. Wang, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>arXiv:2309.02870</strong></em>, 2023.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://arxiv.org/pdf/2305.13802">Online Open-set Semi-supervised Object Detection via Semi-supervised Outlier Filtering</a>,
+                  Z. Wang, <strong>L. Xiao</strong>, L. Xiang, Z. Weng, and T. Yamasaki,
+                  <em><strong>arXiv:2305.13802</strong></em>, 2023.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://arxiv.org/pdf/2303.07951.pdf">MetaMixer: A Regularization Strategy for Online Knowledge Distillation</a>,
+                  M. Wang, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>arXiv:2303.07951</strong></em>, 2023.
+                </li>
+
+                <li class="mb-2">
+                  <a href="https://arxiv.org/pdf/2212.14680.pdf">Semi-supervised Fashion Compatibility Prediction by Color Distortion Prediction</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>arXiv:2212.14680</strong></em>, 2022.
+                </li>
+
+                <li class="mb-0">
+                  <a href="https://arxiv.org/pdf/2301.13014.pdf">Attribute-Guided Multi-Level Attention Network for Fine-Grained Fashion Retrieval</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>arXiv:2301.13014</strong></em>, 2022.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Domestic Conferences -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">Domestic Conferences</div>
+              <ol class="mb-0">
+                <li class="mb-2">
+                  <a href="#">Enhancing the Spatial Awareness of Large Language Models in Path Planning</a>,
+                  <strong>Ling Xiao</strong> and Toshihiko Yamasaki,
+                  <em><strong>第30回 知能メカトロニクスワークショップ 2025 (iMec)</strong></em>, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Few-shot推論によるアノテータに個人適応可能なビデオ要約</a>,
+                  杉原朋弥, 増田俊太郎, <strong>肖玲</strong>, 山崎俊彦,
+                  <em><strong>MIRU 2025</strong></em>, IS3-102, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">時空間情報を統合したプロンプトを用いた保育施設映像の行動認識</a>,
+                  渡辺健太, 増田俊太郎, <strong>肖玲</strong>, 山崎俊彦,
+                  <em><strong>MIRU 2025</strong></em>, IS2-081, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">LLM-Advisor: Leveraging LLMs as Advisors for Cost-efficient Path Planning Across Diverse Terrains</a>,
+                  <strong>Ling Xiao</strong> and Toshihiko Yamasaki,
+                  <em><strong>MIRU 2025</strong></em>, IS2-185, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">TourMLLM: 検索拡張大規模観光マルチモーダルモデル</a>,
+                  山西博雅, <strong>Ling Xiao</strong>, 山崎俊彦,
+                  <em><strong>MIRU 2025</strong></em>, IS2-119, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">基盤モデルによる視覚的評価を用いた動画広告の効果分析</a>,
+                  田邉克晃, 増田俊太郎, 劉岳松, 丹治直人, 勢〆弘幸, <strong>肖玲</strong>, 山崎俊彦,
+                  <em><strong>MIRU 2025</strong></em>, OS2C-06, 2025. [Oral]
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Content-Aware Layout Generation with Large Language Models</a>,
+                  Chen FU, Naoto Tanji, Gakumatsu Ryu, Hiroyuki SESHIME, Shengzhou Yi, <strong>Ling Xiao</strong>, and Toshihiko Yamasaki,
+                  <em><strong>MIRU 2025</strong></em>, IS1-102, 2025.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">タスク適応的検索拡張学習に基づく観光特化大規模マルチモーダルモデル</a>,
+                  山西博雅, <strong>肖 玲</strong>, 山崎俊彦,
+                  <em><strong>信学技報, 画像工学研究会 (IE)</strong></em>, IE2024-61.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Explainable Image Aesthetic Assessment Leveraging Vision-Language Models</a>,
+                  S. Viriyavisuthisakul, S.n Yoshida, K. Shiohara, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>信学技報, 画像工学研究会 (IE)</strong></em>, IE2024-66.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Momentum Knowledge Distillation for Enhanced Online Continual Learning</a>,
+                  N. Michel, M. Wang, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>信学技報, 画像工学研究会 (IE)</strong></em>, IE2024-57.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Llava-Planner: Enhancing Spatial Awareness of LLaVA for Cost-Effective Path Planning</a>,
+                  <strong>L. Xiao</strong>, H. Yamanishi, and T. Yamasaki,
+                  <em><strong>信学技報, 画像工学研究会 (IE)</strong></em>, IE2024-44.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">LLM-Advisor: A LLM Benchmark for Cost-effective Path Planning</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>PCSJ/IMPS 2024</strong></em>, P-2-05, 2024.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">マルチモーダル観光レビュー生成データセットと大規模レビュー生成モデルの作成</a>,
+                  H. Yamanishi, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>PCSJ/IMPS 2024</strong></em>, P-4-18, 2024.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Boosting Fine-grained Fashion Retrieval with Relational Knowledge Distillation</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>信学技報, 画像工学研究会 (IE)</strong></em>, vol. 124, no. 60, IE2024-17, pp. 90–94, 2024.
+                  <a href="https://github.com/Dr-LingXiao/RKD">[Code]</a>
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Language-Guided Self-Supervised Video Summarization Using Text Semantic Matching</a>,
+                  T. Sugihara, S. Masuda, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>MIRU 2024</strong></em>. [Oral]
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">大規模マルチモーダルモデルを用いた広告画像の評価・改善</a>,
+                  砂田達巳, 塩原楓, 劉岳松, 丹治直人, 勢〆弘幸, <strong>肖玲</strong>, 山崎俊彦,
+                  <em><strong>MIRU 2024</strong></em>. [Oral]
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Multi-hop Question Answering over Incomplete Knowledge Graphs by Edge and Meaning Extensions</a>,
+                  X.T. Ye, <strong>L. Xiao</strong>, C. Zhang, and T. Yamasaki,
+                  <em><strong>MIRU 2024</strong></em>.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Constrianed Advertisement Layout Generation based on Graph Neural Networks</a>,
+                  C. Fu, Y. Liu, N. Tanji, H. Seshime, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>MIRU 2024</strong></em>.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Improving Adversarial Robustness in Continual Learning</a>,
+                  K. Mukai, S. Kumano, N. Michel, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>信学技報, 画像工学研究会 (IE)</strong></em>, vol. 123, no. 381, IE2023-37, pp. 13–18, 2024. [IE賞]
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">大規模言語モデルを活用した自己教師あり学習によるビデオ要約</a>,
+                  杉原朋弥, 増田俊太郎, <strong>肖玲</strong>, 山崎俊彦,
+                  <em><strong>IPSJ</strong></em>, 7T-06, pp. 2-653–2-654, 2024.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Advertisement Layout Generation based on Graph Neural Network</a>,
+                  C. Fu, Y. Liu, N. Tanji, H. Seshime, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>信学技報, 画像工学研究会 (IE)</strong></em>, vol. 123, no. 381, IE2023-51, pp. 88–89, 2024.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Improved Fine-grained Fashion Retrieval with Contrastive Learning</a>,
+                  <strong>L. Xiao</strong>, X. F. Zhang, and T. Yamasaki,
+                  <em><strong>MIRU 2023</strong></em>, IS3-55, 2023.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Video Summarization Based on Masked Autoencoder</a>,
+                  M. L. A. FOK, <strong>L. Xiao</strong>, and T. Yamasaki,
+                  <em><strong>MIRU 2023</strong></em>, IS1-84, 2023.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Improving Fashion Compatibility Prediction with Color Distortion Prediction</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>信学技報, 画像工学研究会 (IE)</strong></em>, vol. 122, no. 385, IE2022-61, pp. 17–18, 2023.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">Multi-Level Attention Network for Fine-Grained Fashion Retrieval</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>信学技報, MVE</strong></em>, vol. 122, no. 440, MVE2022-90, pp. 198–199, 2023.
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">SAT: Self-adaptive Training for Fashion Compatibility Prediction</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>MIRU 2022</strong></em>.
+                </li>
+
+                <li class="mb-0">
+                  <a href="#">Spatial Attention Based Fashion Compatibility Prediction</a>,
+                  <strong>L. Xiao</strong> and T. Yamasaki,
+                  <em><strong>PCSJ/IMPS 2021</strong></em>, P-3-17, pp. 135–136, 2021.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Patents (China) -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">Patents (China)</div>
+              <ol class="mb-0">
+                <li class="mb-2">
+                  <a href="#">一种用于静脉穿刺的穿刺靶点识别与定位方法</a>,
+                  <strong>肖玲</strong>、欧阳浩、叶霖、韩斌、陈学东、杨新
+                  <em><strong>（发明专利，专利号: 202210202422.1，申请中）</strong></em>
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">一种钢卷双目视觉定位方法及设备</a>,
+                  胡友民、<strong>肖玲</strong>、吴波
+                  <em><strong>（发明专利，专利号: 201810094718.X，授权日：2020.09.18）</strong></em>
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">一种基于视觉的钢卷定位方法及设备</a>,
+                  胡友民、<strong>肖玲</strong>、吴波
+                  <em><strong>（发明专利，专利号: 201811059328.5，授权日：2020.07.10）</strong></em>
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">一种可视化的起重机吊取定位系统</a>,
+                  胡友民、<strong>肖玲</strong>、吴波、刘颉
+                  <em><strong>（发明专利，专利号: 201611246219.5，授权日：2018.01.02）</strong></em>
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">一种焊接熔池动态过程的在线监测系统及方法</a>,
+                  胡友民、刘颉、<strong>肖玲</strong>、唐松、谷勇
+                  <em><strong>（发明专利，专利号: 201610288460.8，授权日：2018.06.12）</strong></em>
+                </li>
+
+                <li class="mb-2">
+                  <a href="#">一种用于焊接熔池在线监测平台的多功能夹具</a>,
+                  胡友民、唐松、<strong>肖玲</strong>、谷勇、刘颉
+                  <em><strong>（实用新型专利，专利号: 201620434683.6，授权日：2016.10.05）</strong></em>
+                </li>
+
+                <li class="mb-0">
+                  <a href="#">一种针对光流图的快速的FCM图像分割方法</a>,
+                  胡友民、胡中旭、吴波、武敏健、刘颉、<strong>肖玲</strong>、王诗杰、李雪莲
+                  <em><strong>（发明专利，专利号: 201710530461.3，授权日：2019.11.12）</strong></em>
+                  <strong>（2023年度湖北省科学技术奖提名）</strong>
+                </li>
+              </ol>
+            </div>
+          </div>
+
         </div>
+      </div>
 
-
-
+      <!-- FOOTER -->
+      <footer class="py-4 text-center small">
+        © <span id="year"></span> Ling Xiao — Hokkaido University
+      </footer>
     </div>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script>
-      // Auto‑update footer year
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
