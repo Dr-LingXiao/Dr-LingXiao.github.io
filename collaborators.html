@@ -19,11 +19,6 @@
       .tag { font-size: .75rem }
       .link-muted { color: #6c757d }
       .link-muted:hover { color: #0d6efd; text-decoration: none }
-      /* 让每列之间有更明显的间隔 */
-      .row.gutter > [class*="col-"] {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
     </style>
   </head>
   <body>
@@ -52,60 +47,54 @@
         <div class="text-muted">Selected current collaborators</div>
       </div>
 
-      <!-- Grid of collaborators -->
-      <div class="row gutter">
+      <!-- Grid of collaborators (3 columns on large screens) -->
+      <div class="row">
 
         <!-- Yamasaki -->
-        <div class="col-md-6 col-lg-4 mb-4">
+        <div class="col-sm-6 col-lg-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex align-items-center">
-              <img src="img/yamasaki.png" alt="Toshihiko Yamasaki" class="avatar mr-3" />
-              <div>
-                <h5 class="card-title mb-1">Prof. Toshihiko Yamasaki</h5>
-                <div class="text-muted mb-2">The University of Tokyo (UTokyo), Japan</div>
-                <div class="mb-2">
-                  <span class="badge badge-light tag">Attractive computing</span>
-                  <span class="badge badge-light tag">Computer Vision</span>
-                  <span class="badge badge-light tag">Multimedia</span>
-                </div>
-                <a class="link-muted" href="https://www.cvm.t.u-tokyo.ac.jp/" target="_blank" rel="noopener">Homepage</a>
+            <div class="card-body text-center">
+              <img src="img/yamasaki.png" alt="Toshihiko Yamasaki" class="avatar mb-3" />
+              <h5 class="card-title mb-1">Prof. Toshihiko Yamasaki</h5>
+              <div class="text-muted mb-2">The University of Tokyo (UTokyo), Japan</div>
+              <div class="mb-2">
+                <span class="badge badge-light tag">Attractive computing</span>
+                <span class="badge badge-light tag">Computer Vision</span>
+                <span class="badge badge-light tag">Multimedia</span>
               </div>
+              <a class="link-muted" href="https://www.cvm.t.u-tokyo.ac.jp/" target="_blank" rel="noopener">Homepage</a>
             </div>
           </div>
         </div>
 
         <!-- Xuesu Xiao -->
-        <div class="col-md-6 col-lg-4 mb-4">
+        <div class="col-sm-6 col-lg-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex align-items-center">
-              <img src="img/xuesu.jpg" alt="Xuesu Xiao" class="avatar mr-3" />
-              <div>
-                <h5 class="card-title mb-1">Prof. Xuesu Xiao</h5>
-                <div class="text-muted mb-2">George Mason University (GMU), USA</div>
-                <div class="mb-2">
-                  <span class="badge badge-light tag">Robotics</span>
-                  <span class="badge badge-light tag">Embodied AI</span>
-                </div>
-                <a class="link-muted" href="https://cs.gmu.edu/~xiao/" target="_blank" rel="noopener">Homepage</a>
+            <div class="card-body text-center">
+              <img src="img/xuesu.jpg" alt="Xuesu Xiao" class="avatar mb-3" />
+              <h5 class="card-title mb-1">Prof. Xuesu Xiao</h5>
+              <div class="text-muted mb-2">George Mason University (GMU), USA</div>
+              <div class="mb-2">
+                <span class="badge badge-light tag">Robotics</span>
+                <span class="badge badge-light tag">Embodied AI</span>
               </div>
+              <a class="link-muted" href="https://cs.gmu.edu/~xiao/" target="_blank" rel="noopener">Homepage</a>
             </div>
           </div>
         </div>
 
         <!-- Bin Han -->
-        <div class="col-md-6 col-lg-4 mb-4">
+        <div class="col-sm-6 col-lg-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex align-items-center">
-              <img src="img/binhan.png" alt="Bin Han" class="avatar mr-3" />
-              <div>
-                <h5 class="card-title mb-1">Prof. Bin Han</h5>
-                <div class="text-muted mb-2">Huazhong Univ. of Science and Technology (HUST), China</div>
-                <div class="mb-2">
-                  <span class="badge badge-light tag">Robotics</span>
-                  <span class="badge badge-light tag">Control system</span>
-                </div>
-                <a class="link-muted" href="http://faculty.hust.edu.cn/HANBIN/zh_CN/index.htm" target="_blank" rel="noopener">Homepage</a>
+            <div class="card-body text-center">
+              <img src="img/binhan.png" alt="Bin Han" class="avatar mb-3" />
+              <h5 class="card-title mb-1">Prof. Bin Han</h5>
+              <div class="text-muted mb-2">Huazhong Univ. of Science and Technology (HUST), China</div>
+              <div class="mb-2">
+                <span class="badge badge-light tag">Robotics</span>
+                <span class="badge badge-light tag">Control system</span>
               </div>
+              <a class="link-muted" href="http://faculty.hust.edu.cn/HANBIN/zh_CN/index.htm" target="_blank" rel="noopener">Homepage</a>
             </div>
           </div>
         </div>
