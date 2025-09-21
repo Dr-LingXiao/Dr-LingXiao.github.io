@@ -4,25 +4,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Collaborators — Ling Xiao</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- 用 CDN 确保 Bootstrap 4 栅格可用；如果你一定要用本地文件，可把下一行换回 assets/css/bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
     <style>
       body { line-height: 1.6 }
       .navbar-brand { font-weight: 700 }
       .page-title { font-weight: 700; letter-spacing: .3px }
       .card { border-radius: .75rem; }
       .avatar {
-        width: 84px;
-        height: 84px;
-        border-radius: 12px; /* 方形圆角头像 */
-        object-fit: cover;
+        width: 84px; height: 84px;
+        border-radius: 12px; object-fit: cover;
+        flex: 0 0 84px; /* 保证左侧头像固定宽度 */
       }
       .card-title { font-weight: 700; margin-bottom: .25rem; }
       .affil { color: #6c757d; margin-bottom: .5rem; }
       .tag { font-size: .75rem }
       .link-muted { color: #6c757d }
       .link-muted:hover { color: #0d6efd; text-decoration: none }
+      /* 让每列左右更有留白（Bootstrap4 没有 g-4，用 padding 实现） */
+      .row.gutter > [class*="col-"] { padding-left: 15px; padding-right: 15px; }
     </style>
   </head>
+
   <body>
     <div class="container" style="max-width:1180px;">
       <!-- NAVBAR -->
@@ -49,14 +54,13 @@
         <div class="text-muted">Selected current collaborators</div>
       </div>
 
-      <!-- Collaborators grid -->
-      <div class="row">
-
-        <!-- Yamasaki -->
+      <!-- ✅ 三列网格；每个卡片内部是“左图右文” -->
+      <div class="row gutter">
+        <!-- 1 -->
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow-sm p-3">
             <div class="d-flex">
-              <img src="img/yamasaki.png" alt="Toshihiko Yamasaki" class="avatar mr-3" />
+              <img src="img/yamasaki.png" alt="Toshihiko Yamasaki" class="avatar mr-3">
               <div>
                 <h5 class="card-title">Prof. Toshihiko Yamasaki</h5>
                 <div class="affil">The University of Tokyo (UTokyo), Japan</div>
@@ -71,11 +75,11 @@
           </div>
         </div>
 
-        <!-- Xuesu Xiao -->
+        <!-- 2 -->
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow-sm p-3">
             <div class="d-flex">
-              <img src="img/xuesu.jpg" alt="Xuesu Xiao" class="avatar mr-3" />
+              <img src="img/xuesu.jpg" alt="Xuesu Xiao" class="avatar mr-3">
               <div>
                 <h5 class="card-title">Prof. Xuesu Xiao</h5>
                 <div class="affil">George Mason University (GMU), USA</div>
@@ -89,11 +93,11 @@
           </div>
         </div>
 
-        <!-- Bin Han -->
+        <!-- 3 -->
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow-sm p-3">
             <div class="d-flex">
-              <img src="img/binhan.png" alt="Bin Han" class="avatar mr-3" />
+              <img src="img/binhan.png" alt="Bin Han" class="avatar mr-3">
               <div>
                 <h5 class="card-title">Prof. Bin Han</h5>
                 <div class="affil">Huazhong Univ. of Science and Technology (HUST), China</div>
@@ -106,10 +110,8 @@
             </div>
           </div>
         </div>
-
       </div>
 
-      <!-- Footer -->
       <footer class="py-4 text-center small text-muted">
         © <span id="year"></span> Ling Xiao — Hokkaido University
       </footer>
@@ -118,8 +120,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
