@@ -3,117 +3,148 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <title>Ling Xiao's Homepage</title>
+    <title>Ling Xiao — Honors & Funding</title>
+
+    <!-- Bootstrap 4（如需改回本地，请换成 assets/css/bootstrap.min.css） -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <style>
+      :root { --brand: #0d6efd; }
+      body { line-height: 1.6; }
+      /* 胶囊导航 */
+      .navbar-wrap { max-width: 1200px; margin: 1.25rem auto; }
+      .navbar.navbar-pill { background:#0d6efd; border-radius:9999px; padding:.6rem 1rem; }
+      .navbar.navbar-pill .navbar-brand { color:#fff; font-weight:700; letter-spacing:.2px; }
+      .navbar.navbar-pill .nav-link { color:rgba(255,255,255,.9); }
+      .navbar.navbar-pill .nav-item.active .nav-link,
+      .navbar.navbar-pill .nav-link:hover { color:#fff; }
+
+      .page-title { font-weight:700; letter-spacing:.3px; }
+      .section-title { font-weight:700; font-size:1.1rem; letter-spacing:.3px; text-transform:uppercase; color:#6c757d; margin-bottom:.75rem; }
+      .card { border-radius:.75rem; }
+      .card + .card { margin-top:1rem; }
+      .row.gutter > [class*="col-"] { padding-left:15px; padding-right:15px; } /* Bootstrap4 无 g-4，用 padding 实现 */
+      footer { color:#6c757d; }
+    </style>
   </head>
-  
-  
-  
-  
+
   <body>
-    <div class="container" style="max-width: 1600px;">
-	
+    <div class="container" style="max-width:1180px;">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Ling Xiao</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <!-- PILL NAVBAR -->
+      <div class="navbar-wrap">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-pill shadow-sm">
+          <a class="navbar-brand" href="index.html">Ling Xiao</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                  aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-	  <li class="nav-item">
-        <a class="nav-link" href="project.html">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="publication.html">Publications</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="honor.html">Honors and fundings</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="activity.html">Services</a>
-      </li>
-		 <li class="nav-item">
-        <a class="nav-link" href="students.html">Students</a>
-      </li>
-			  <li class="nav-item">
-        <a class="nav-link" href="collaborators.html">Collaborators</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-3">
+              <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
+              <li class="nav-item active"><a class="nav-link" href="honor.html" aria-current="page">Honors &amp; Funding</a></li>
+              <li class="nav-item"><a class="nav-link" href="activity.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+              <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-<br />
-<br />
-		<div class="row mb-3">
-            <div class="col-sm-12">
-		    <ul>
-			    <h4>Fundings</h4>
-        <li class="mb-2">
-			        1. <a href="https://www.u-tokyo.ac.jp/en/">The University of Tokyo (東京大学)</a>. Fund　to　Support　Female　Researchers　with　their　Research　Skills　Training, 2024.08-2025.07, Amount: 2,00,000yen.
-		    </li>
-			    
-	            <li class="mb-2">
-			        2. AIセンター融合研究促進費 (<a href="https://www.ai.u-tokyo.ac.jp/ja/">Next Generation Artificial Intelligence Research Center, UTokyo</a>). Project name: Explainable Recommendations AI, 2022.10-2023.03, Amount: 2,000,000yen.
-		    </li>
-			    <li class="mb-2">
-			        3. 若手研究. Project name: Efficient and accurate scaling Graph Neural Networks for giant graphs, 2024.04-2026.03, Amount: 4,680,000yen.
-		    </li>
-			    <h4>Award & Honor </h4>
-                   <li class="mb-2">
- <a href="">TourMLLM: A Retrieval-Augmented Multimodal Large Language Model for Multitask Learning in the Tourism Domain</a>, 
-  H. Yamanishi, <strong>L. Xiao*[corresponding author]</strong>, and T. Yamasaki,   
- <em><strong> The 15th ACM International Conference on Multimedia Retrieval (ICMR)</strong></em>, pp. 1654-1663, 2025, <strong>[Best paper award!]</strong> </a>
- </li>
+      <!-- PAGE TITLE -->
+      <h1 class="page-title mb-3">Honors &amp; Funding</h1>
 
-			     <li class="mb-2">
-				1. Improving Adversarial Robustness in Continual Learning, K. Mukai, S. Kumano, N. Michel, <strong>L. Xiao</strong>, and T. Yamasaki, 信学技報, 画像工学研究会 (IE), vol.123, no.381, IE2023-37, pp.13-18, 2024. [IE賞]
-				 </li> 
-			    <li class="mb-2">
-				     2. Merit Graduate, <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology (华中科技大学)</a>, 2016-2017.
-		    </li>	
-			     <li class="mb-2">
-				3. Outstanding Graduate Student Cadre, <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology (华中科技大学)</a>, 2015-2016.
-		    </li>	
-			    
-			     
-			    
-			     <h4>Scholarship </h4>
-			     <li class="mb-2">
-				1. China Scholarship Council Scholarship (No: 20180616011) (1/10).
-		    </li>	
-			    <li class="mb-2">
-				2. National First-class Scholarship, Ministry of Education of the P. R. China, 2018-2019.
-		    </li>	
-			     <li class="mb-2">
-				3. National First-class Scholarship, Ministry of Education of the P. R. China, 2017-2018.
-		    </li>	
-			     <li class="mb-2">
-				4. National Second-class Scholarship, Ministry of Education of the P. R. China, 2016-2017.
-		    </li>	
-		     <li class="mb-2">
-				5. National Second-class Scholarship, Ministry of Education of the P. R. China, 2015-2016.
-		    </li>	
-			    <li class="mb-2">
-				6. Outstanding Third-Class Scholarship, Huazhong University of Science and Technology, 2015-2016.
-		    </li>	
-		    <ul>
+      <!-- CONTENT -->
+      <div class="row gutter">
+
+        <div class="col-lg-6 mb-4">
+          <!-- Fundings -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">Fundings</div>
+              <ol class="mb-0">
+                <li class="mb-2">
+                  <a href="https://www.u-tokyo.ac.jp/en/" target="_blank" rel="noopener">The University of Tokyo (東京大学)</a>.
+                  Fund to Support Female Researchers with their Research Skills Training,
+                  2024.08–2025.07, Amount: 2,00,000 yen.
+                </li>
+                <li class="mb-2">
+                  AIセンター融合研究促進費
+                  (<a href="https://www.ai.u-tokyo.ac.jp/ja/" target="_blank" rel="noopener">Next Generation Artificial Intelligence Research Center, UTokyo</a>).
+                  Project name: Explainable Recommendations AI, 2022.10–2023.03, Amount: 2,000,000 yen.
+                </li>
+                <li class="mb-0">
+                  若手研究. Project name: Efficient and accurate scaling Graph Neural Networks for giant graphs,
+                  2024.04–2026.03, Amount: 4,680,000 yen.
+                </li>
+              </ol>
             </div>
-        </div>		
+          </div>
 
+          <!-- Scholarship -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">Scholarship</div>
+              <ol class="mb-0">
+                <li class="mb-2">China Scholarship Council Scholarship (No: 20180616011) (1/10).</li>
+                <li class="mb-2">National First-class Scholarship, Ministry of Education of the P. R. China, 2018–2019.</li>
+                <li class="mb-2">National First-class Scholarship, Ministry of Education of the P. R. China, 2017–2018.</li>
+                <li class="mb-2">National Second-class Scholarship, Ministry of Education of the P. R. China, 2016–2017.</li>
+                <li class="mb-2">National Second-class Scholarship, Ministry of Education of the P. R. China, 2015–2016.</li>
+                <li class="mb-0">Outstanding Third-Class Scholarship, Huazhong University of Science and Technology, 2015–2016.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-lg-6 mb-4">
+          <!-- Award & Honor -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">Award &amp; Honor</div>
+              <ol class="mb-0">
+                <li class="mb-2">
+                  <a href="#">TourMLLM: A Retrieval-Augmented Multimodal Large Language Model for Multitask Learning in the Tourism Domain</a>,
+                  H. Yamanishi, <strong>L. Xiao*</strong> (corresponding author), and T. Yamasaki,
+                  <em><strong>The 15th ACM International Conference on Multimedia Retrieval (ICMR)</strong></em>,
+                  pp. 1654–1663, 2025, <strong>[Best paper award!]</strong>
+                </li>
+                <li class="mb-2">
+                  Improving Adversarial Robustness in Continual Learning, K. Mukai, S. Kumano, N. Michel,
+                  <strong>L. Xiao</strong>, and T. Yamasaki, 信学技報, 画像工学研究会 (IE), vol.123, no.381,
+                  IE2023-37, pp.13–18, 2024. [IE賞]
+                </li>
+                <li class="mb-0">
+                  Merit Graduate,
+                  <a href="http://english.hust.edu.cn/" target="_blank" rel="noopener">
+                    Huazhong University of Science and Technology (华中科技大学)
+                  </a>, 2016–2017.
+                </li>
+                <li class="mb-0">
+                  Outstanding Graduate Student Cadre,
+                  <a href="http://english.hust.edu.cn/" target="_blank" rel="noopener">
+                    Huazhong University of Science and Technology (华中科技大学)
+                  </a>, 2015–2016.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="py-4 text-center small">
+        © <span id="year"></span> Ling Xiao — Hokkaido University
+      </footer>
     </div>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script>
-      // Auto‑update footer year
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-			</body>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
 </html>
