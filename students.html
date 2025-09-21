@@ -1,42 +1,153 @@
-<!-- Members Section -->
-<div class="col-lg-5 mb-4">
-  <div class="card shadow-sm">
-    <div class="card-body">
-      <div class="section-title">Members</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Ling Xiao — Homepage</title>
 
-      <!-- DC1 -->
-      <div class="d-flex align-items-center mb-3">
-        <div class="mr-3">
-          <span class="badge badge-primary member-badge px-2 py-1">DC1</span>
+    <!-- Bootstrap 4（也可换回本地：assets/css/bootstrap.min.css） -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <style>
+      :root { --brand: #0d6efd; }
+      body { line-height: 1.6; }
+      .navbar-brand { font-weight: 700; letter-spacing: .2px; }
+
+      /* 可选：胶囊风格导航（与您截图一致） */
+      .navbar-wrap { max-width: 1200px; margin: 1.25rem auto; }
+      .navbar.navbar-pill { background:#0d6efd; border-radius:9999px; padding:.6rem 1rem; }
+      .navbar.navbar-pill .navbar-brand { color:#fff; }
+      .navbar.navbar-pill .nav-link { color:rgba(255,255,255,.9); }
+      .navbar.navbar-pill .nav-item.active .nav-link,
+      .navbar.navbar-pill .nav-link:hover { color:#fff; }
+
+      .hero {
+        background: linear-gradient(135deg, rgba(13,110,253,.08), rgba(13,110,253,.02));
+        border-radius: .75rem; padding: 2rem 1.5rem;
+      }
+      .hero h1 { font-size: 2rem; margin-bottom: .5rem; }
+      @media (min-width: 992px) { .hero h1 { font-size: 2.4rem; } }
+
+      .section-title {
+        font-weight: 700; font-size: 1.1rem; letter-spacing: .3px;
+        text-transform: uppercase; color: #6c757d; margin-bottom: .75rem;
+      }
+      .card { border-radius: .75rem; }
+      .member-badge { font-size: .75rem; }
+      footer { color: #6c757d; }
+
+      /* 让列之间更舒服些（Bootstrap4 无 g-4） */
+      .row.gutter > [class*="col-"] { padding-left: 15px; padding-right: 15px; }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" style="max-width:1180px;">
+
+      <!-- PILL NAVBAR（想用旧样式可把外层 div 去掉，并把 .navbar-pill 改成 bg-primary） -->
+      <div class="navbar-wrap">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-pill shadow-sm">
+          <a class="navbar-brand" href="index.html">Ling Xiao</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                  aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-3">
+              <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
+              <li class="nav-item"><a class="nav-link" href="honor.html">Honors &amp; Funding</a></li>
+              <li class="nav-item"><a class="nav-link" href="activity.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+              <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- HERO -->
+      <section class="hero mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h1>Welcome — Research on Multimodal AI &amp; Robot Navigation</h1>
+            <p class="mb-0">I am an Assistant Professor at Hokkaido University. My research focuses on multimodal large models, socially compliant navigation, open-world perception, and cost-efficient path planning.</p>
+          </div>
+          <div class="col-md-4 text-md-right mt-3 mt-md-0">
+            <!-- 可替换为真实头像 -->
+            <div class="d-inline-block bg-white border rounded p-2">
+              <div style="width:110px;height:110px;background:#e9ecef;border-radius:8px;"
+                   class="d-flex align-items-center justify-content-center">
+                <span class="text-muted">Photo</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h6 class="mb-0">Xinyu Zhang</h6>
-          <small class="text-muted">Doctoral Course Year 1</small>
+      </section>
+
+      <!-- MAIN: 左侧 Highlights + 右侧 Members（统一为卡片风格） -->
+      <div class="row gutter">
+        <!-- LEFT -->
+        <div class="col-lg-7 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">Highlights</div>
+              <ul class="mb-0">
+                <li class="mb-2">[Dec 2025] Talk: <em>Efficient Socially Compliant Navigation with Language Models</em> (IE @ 下関)</li>
+                <li class="mb-2">Path planning with LLM advisors across multi-terrain cost maps — preprint available soon.</li>
+                <li class="mb-2">New dataset initiatives on social navigation and multimodal robotics.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Members（已统一风格） -->
+        <div class="col-lg-5 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="section-title">Members</div>
+
+              <!-- DC1 -->
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge badge-primary member-badge px-2 py-1 mr-3">DC1</span>
+                <div>
+                  <h6 class="mb-0">Xinyu Zhang</h6>
+                  <small class="text-muted">Doctoral Course Year 1</small>
+                </div>
+              </div>
+
+              <!-- B4 -->
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge badge-success member-badge px-2 py-1 mr-3">B4</span>
+                <div>
+                  <h6 class="mb-0">Tomohito Kawabata</h6>
+                  <small class="text-muted">Undergraduate Year 4</small>
+                </div>
+              </div>
+
+              <!-- 研究生 -->
+              <div class="d-flex align-items-center">
+                <span class="badge badge-secondary member-badge px-2 py-1 mr-3">研究生</span>
+                <div>
+                  <h6 class="mb-0">Zhuonan Liu, Zishuo Wang</h6>
+                  <small class="text-muted">Research Students</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- B4 -->
-      <div class="d-flex align-items-center mb-3">
-        <div class="mr-3">
-          <span class="badge badge-success member-badge px-2 py-1">B4</span>
-        </div>
-        <div>
-          <h6 class="mb-0">Tomohito Kawabata</h6>
-          <small class="text-muted">Undergraduate Year 4</small>
-        </div>
-      </div>
-
-      <!-- 研究生 -->
-      <div class="d-flex align-items-center mb-2">
-        <div class="mr-3">
-          <span class="badge badge-secondary member-badge px-2 py-1">研究生</span>
-        </div>
-        <div>
-          <h6 class="mb-0">Zhuonan Liu, Zishuo Wang</h6>
-          <small class="text-muted">Research Students</small>
-        </div>
-      </div>
-
+      <!-- FOOTER -->
+      <footer class="py-4 text-center small">
+        © <span id="year"></span> Ling Xiao — Hokkaido University
+      </footer>
     </div>
-  </div>
-</div>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
