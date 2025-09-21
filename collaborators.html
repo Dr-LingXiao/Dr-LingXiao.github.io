@@ -9,13 +9,15 @@
       body { line-height: 1.6 }
       .navbar-brand { font-weight: 700 }
       .page-title { font-weight: 700; letter-spacing: .3px }
-      .card { border-radius: .75rem }
+      .card { border-radius: .75rem; }
       .avatar {
         width: 84px;
         height: 84px;
-        border-radius: 12px; /* 方形圆角 */
+        border-radius: 12px; /* 方形圆角头像 */
         object-fit: cover;
       }
+      .card-title { font-weight: 700; margin-bottom: .25rem; }
+      .affil { color: #6c757d; margin-bottom: .5rem; }
       .tag { font-size: .75rem }
       .link-muted { color: #6c757d }
       .link-muted:hover { color: #0d6efd; text-decoration: none }
@@ -47,17 +49,18 @@
         <div class="text-muted">Selected current collaborators</div>
       </div>
 
-      <!-- Grid of collaborators (3 columns, 横向布局) -->
+      <!-- Collaborators grid -->
       <div class="row">
+
         <!-- Yamasaki -->
-        <div class="col-md-6 col-lg-4 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow-sm p-3">
             <div class="d-flex">
               <img src="img/yamasaki.png" alt="Toshihiko Yamasaki" class="avatar mr-3" />
               <div>
-                <h5 class="mb-1"><strong>Prof. Toshihiko Yamasaki</strong></h5>
-                <div class="text-muted mb-1">The University of Tokyo (UTokyo), Japan</div>
-                <div class="mb-1">
+                <h5 class="card-title">Prof. Toshihiko Yamasaki</h5>
+                <div class="affil">The University of Tokyo (UTokyo), Japan</div>
+                <div class="mb-2">
                   <span class="badge badge-light tag">Attractive computing</span>
                   <span class="badge badge-light tag">Computer Vision</span>
                   <span class="badge badge-light tag">Multimedia</span>
@@ -69,14 +72,14 @@
         </div>
 
         <!-- Xuesu Xiao -->
-        <div class="col-md-6 col-lg-4 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow-sm p-3">
             <div class="d-flex">
               <img src="img/xuesu.jpg" alt="Xuesu Xiao" class="avatar mr-3" />
               <div>
-                <h5 class="mb-1"><strong>Prof. Xuesu Xiao</strong></h5>
-                <div class="text-muted mb-1">George Mason University (GMU), USA</div>
-                <div class="mb-1">
+                <h5 class="card-title">Prof. Xuesu Xiao</h5>
+                <div class="affil">George Mason University (GMU), USA</div>
+                <div class="mb-2">
                   <span class="badge badge-light tag">Robotics</span>
                   <span class="badge badge-light tag">Embodied AI</span>
                 </div>
@@ -87,14 +90,14 @@
         </div>
 
         <!-- Bin Han -->
-        <div class="col-md-6 col-lg-4 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow-sm p-3">
             <div class="d-flex">
               <img src="img/binhan.png" alt="Bin Han" class="avatar mr-3" />
               <div>
-                <h5 class="mb-1"><strong>Prof. Bin Han</strong></h5>
-                <div class="text-muted mb-1">Huazhong Univ. of Science and Technology (HUST), China</div>
-                <div class="mb-1">
+                <h5 class="card-title">Prof. Bin Han</h5>
+                <div class="affil">Huazhong Univ. of Science and Technology (HUST), China</div>
+                <div class="mb-2">
                   <span class="badge badge-light tag">Robotics</span>
                   <span class="badge badge-light tag">Control system</span>
                 </div>
@@ -103,6 +106,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <!-- Footer -->
@@ -114,6 +118,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
