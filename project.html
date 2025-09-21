@@ -1,96 +1,141 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <title>Ling Xiao's Homepage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Projects / Experiences — Ling Xiao</title>
+
+    <!-- 用 CDN 确保一致性；若需本地文件可改为 assets/css/bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <style>
+      :root { --brand:#0d6efd; }
+      body { line-height:1.6; }
+      /* 胶囊导航：与站内其它页一致 */
+      .navbar-wrap{max-width:1180px;margin:1.25rem auto;}
+      .navbar.navbar-pill{background:#0d6efd;border-radius:9999px;padding:.6rem 1rem;}
+      .navbar.navbar-pill .navbar-brand{color:#fff;font-weight:700;letter-spacing:.2px;}
+      .navbar.navbar-pill .nav-link{color:rgba(255,255,255,.9);}
+      .navbar.navbar-pill .nav-item.active .nav-link,
+      .navbar.navbar-pill .nav-link:hover{color:#fff;}
+
+      .container-narrow{max-width:1180px;}
+      .page-title{font-weight:700;letter-spacing:.3px;}
+      .card{border-radius:.75rem;}
+      .logo-chip{height:40px;border-radius:.5rem;}
+      .thumb{height:100px;border-radius:.5rem;}
+      .muted{color:#6c757d;}
+      .meta{font-size:.9rem;}
+      .row.gutter > [class*="col-"]{padding-left:15px;padding-right:15px;} /* Bootstrap4 无 g-4，用 padding 实现 */
+      footer{color:#6c757d;}
+    </style>
   </head>
 
   <body>
-    <div class="container" style="max-width: 1600px;">
+    <div class="container container-narrow">
 
-      <!-- ====== NAVBAR ====== -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Ling Xiao</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- ====== PILL NAVBAR ====== -->
+      <div class="navbar-wrap">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-pill shadow-sm">
+          <a class="navbar-brand" href="index.html">Ling Xiao</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
-            <li class="nav-item"><a class="nav-link" href="honor.html">Honors and fundings</a></li>
-            <li class="nav-item"><a class="nav-link" href="activity.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
-            <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
-          </ul>
-        </div>
-      </nav>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-3">
+              <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
+              <li class="nav-item"><a class="nav-link" href="honor.html">Honors &amp; Funding</a></li>
+              <li class="nav-item"><a class="nav-link" href="activity.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+              <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-      <br><br>
+      <!-- ====== HEADER ====== -->
+      <div class="mb-3">
+        <h1 class="page-title mb-2">Projects &amp; Research Experiences</h1>
+        <div class="muted">Selected projects and collaborative research</div>
+      </div>
 
-      <!-- ====== PROJECT EXPERIENCES ====== -->
-      <div class="row">
+      <!-- ====== PROJECT CARDS ====== -->
+      <div class="row gutter">
 
         <!-- Project 1 -->
-        <div class="col-md-12 mb-4">
-          <div class="card shadow-sm p-3">
-            <h5 class="card-title">
-              1. Participate: 2022.07 - 2025.03, Beyond AI, The University of Tokyo, Japan
-              <img src="img/UTokyo-logo.png" class="img-thumbnail ml-2" style="height: 40px;">
-            </h5>
-            <p class="card-text">Project: 「メタバース空間におけるユーザ体験最適化」(User experience optimization in the metaverse space)</p>
-            <div class="d-flex flex-wrap">
-              <img src="img/Beyond AI.png" class="img-thumbnail mr-2 mb-2" style="height: 100px;">
+        <div class="col-12 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start flex-wrap">
+                <div>
+                  <h5 class="card-title mb-1">Beyond AI — The University of Tokyo</h5>
+                  <div class="meta muted mb-2">Participate · 2022.07 – 2025.03 · Japan</div>
+                </div>
+                <img src="img/UTokyo-logo.png" alt="UTokyo" class="logo-chip ml-auto mb-2">
+              </div>
+              <p class="card-text mb-3">Project: 「メタバース空間におけるユーザ体験最適化」(User experience optimization in the metaverse space)</p>
+              <div class="d-flex flex-wrap">
+                <img src="img/Beyond AI.png" alt="Beyond AI" class="thumb mr-2 mb-2">
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="col-md-12 mb-4">
-          <div class="card shadow-sm p-3">
-            <h5 class="card-title">
-              2. Participate: 2018.10 - 2019.11, UQ-NSRSU (NS-1803) grant, The University of Queensland, Australia
-              <img src="img/UQ-logo.png" class="img-thumbnail ml-2" style="height: 40px;">
-            </h5>
-            <p class="card-text">Project: Additive manufacturing of advanced ceramic</p>
-            <div class="d-flex flex-wrap">
-              <img src="img/3D-printing-1.png" class="img-thumbnail mr-2 mb-2" style="height: 100px;">
-              <img src="img/3D-printing-2.png" class="img-thumbnail mr-2 mb-2" style="height: 100px;">
-              <img src="img/3D-printing-3.png" class="img-thumbnail mr-2 mb-2" style="height: 100px;">
+        <div class="col-12 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start flex-wrap">
+                <div>
+                  <h5 class="card-title mb-1">UQ-NSRSU (NS-1803) Grant — The University of Queensland</h5>
+                  <div class="meta muted mb-2">Participate · 2018.10 – 2019.11 · Australia</div>
+                </div>
+                <img src="img/UQ-logo.png" alt="UQ" class="logo-chip ml-auto mb-2">
+              </div>
+              <p class="card-text mb-3">Project: Additive manufacturing of advanced ceramic</p>
+              <div class="d-flex flex-wrap">
+                <img src="img/3D-printing-1.png" alt="3D printing 1" class="thumb mr-2 mb-2">
+                <img src="img/3D-printing-2.png" alt="3D printing 2" class="thumb mr-2 mb-2">
+                <img src="img/3D-printing-3.png" alt="3D printing 3" class="thumb mr-2 mb-2">
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Project 3 -->
-        <div class="col-md-12 mb-4">
-          <div class="card shadow-sm p-3">
-            <h5 class="card-title">
-              3. In charge: 2017.03 - 2018.10, WEIHUA Corporation Collaborative Research, P. R. China
-              <img src="img/WEIHUA.png" class="img-thumbnail ml-2" style="height: 40px;">
-            </h5>
-            <p class="card-text">Project: Automatic crane and steel roll localization using machine vision</p>
-            <div class="d-flex flex-wrap">
-              <img src="img/Steel roll_weihua.png" class="img-thumbnail mr-2 mb-2" style="height: 100px;">
+        <div class="col-12 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start flex-wrap">
+                <div>
+                  <h5 class="card-title mb-1">WEIHUA Corporation Collaborative Research</h5>
+                  <div class="meta muted mb-2">In charge · 2017.03 – 2018.10 · P. R. China</div>
+                </div>
+                <img src="img/WEIHUA.png" alt="WEIHUA" class="logo-chip ml-auto mb-2">
+              </div>
+              <p class="card-text mb-3">Project: Automatic crane and steel roll localization using machine vision</p>
+              <div class="d-flex flex-wrap">
+                <img src="img/Steel roll_weihua.png" alt="Steel roll project" class="thumb mr-2 mb-2">
+              </div>
             </div>
           </div>
         </div>
 
       </div>
+
+      <!-- FOOTER -->
+      <footer class="py-4 text-center small">
+        © <span id="year"></span> Ling Xiao — Hokkaido University
+      </footer>
     </div>
 
-    <!-- ====== JS ====== -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
