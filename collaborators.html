@@ -9,16 +9,28 @@
       body { line-height: 1.6 }
       .navbar-brand { font-weight: 700 }
       .page-title { font-weight: 700; letter-spacing: .3px }
+
+      /* 卡片与头像样式（左对齐版本） */
       .card { border-radius: .75rem }
-      .avatar {
-        width: 84px;
-        height: 84px;
-        border-radius: 12px;
+      .collab-card .avatar {
+        width: 84px; height: 84px;
+        border-radius: 12px;         /* 与截图相同的圆角方形 */
         object-fit: cover;
+        display: block;
+        margin-bottom: .75rem;       /* 头像与姓名之间的间距 */
       }
+      .collab-card .card-title { margin-bottom: .25rem; font-weight: 700; }
+      .collab-card .affil { color: #6c757d; margin-bottom: .5rem; }
       .tag { font-size: .75rem }
       .link-muted { color: #6c757d }
       .link-muted:hover { color: #0d6efd; text-decoration: none }
+
+      /* 让每列之间更松弛（Bootstrap4 没有 g-4，用 padding 实现） */
+      .row.gutter > [class*="col-"] { padding-left: 15px; padding-right: 15px; }
+
+      /* 轻微 hover 效果，贴近截图的清爽风格 */
+      .collab-card { transition: box-shadow .2s ease; }
+      .collab-card:hover { box-shadow: 0 0.5rem 1rem rgba(0,0,0,.08); }
     </style>
   </head>
   <body>
@@ -42,21 +54,20 @@
       </nav>
 
       <!-- Header -->
-      <div class="my-3 d-flex align-items-end justify-content-between flex-wrap">
+      <div class="my-3">
         <h1 class="page-title mb-2">Collaborators</h1>
         <div class="text-muted">Selected current collaborators</div>
       </div>
 
-      <!-- Grid of collaborators (3 columns on large screens) -->
-      <div class="row">
-
-        <!-- Yamasaki -->
+      <!-- 3 列左对齐卡片 -->
+      <div class="row gutter">
+        <!-- 1 -->
         <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <img src="img/yamasaki.png" alt="Toshihiko Yamasaki" class="avatar mb-3" />
-              <h5 class="card-title mb-1">Prof. Toshihiko Yamasaki</h5>
-              <div class="text-muted mb-2">The University of Tokyo (UTokyo), Japan</div>
+          <div class="card collab-card h-100 shadow-sm">
+            <div class="card-body">
+              <img src="img/yamasaki.png" alt="Toshihiko Yamasaki" class="avatar" />
+              <h5 class="card-title">Prof. Toshihiko Yamasaki</h5>
+              <div class="affil">The University of Tokyo (UTokyo), Japan</div>
               <div class="mb-2">
                 <span class="badge badge-light tag">Attractive computing</span>
                 <span class="badge badge-light tag">Computer Vision</span>
@@ -67,13 +78,13 @@
           </div>
         </div>
 
-        <!-- Xuesu Xiao -->
+        <!-- 2 -->
         <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <img src="img/xuesu.jpg" alt="Xuesu Xiao" class="avatar mb-3" />
-              <h5 class="card-title mb-1">Prof. Xuesu Xiao</h5>
-              <div class="text-muted mb-2">George Mason University (GMU), USA</div>
+          <div class="card collab-card h-100 shadow-sm">
+            <div class="card-body">
+              <img src="img/xuesu.jpg" alt="Xuesu Xiao" class="avatar" />
+              <h5 class="card-title">Prof. Xuesu Xiao</h5>
+              <div class="affil">George Mason University (GMU), USA</div>
               <div class="mb-2">
                 <span class="badge badge-light tag">Robotics</span>
                 <span class="badge badge-light tag">Embodied AI</span>
@@ -83,13 +94,13 @@
           </div>
         </div>
 
-        <!-- Bin Han -->
+        <!-- 3 -->
         <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <img src="img/binhan.png" alt="Bin Han" class="avatar mb-3" />
-              <h5 class="card-title mb-1">Prof. Bin Han</h5>
-              <div class="text-muted mb-2">Huazhong Univ. of Science and Technology (HUST), China</div>
+          <div class="card collab-card h-100 shadow-sm">
+            <div class="card-body">
+              <img src="img/binhan.png" alt="Bin Han" class="avatar" />
+              <h5 class="card-title">Prof. Bin Han</h5>
+              <div class="affil">Huazhong Univ. of Science and Technology (HUST), China</div>
               <div class="mb-2">
                 <span class="badge badge-light tag">Robotics</span>
                 <span class="badge badge-light tag">Control system</span>
@@ -98,7 +109,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- Footer -->
@@ -110,8 +120,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
