@@ -69,37 +69,44 @@
 
   
        <!-- Main: Members -->
-<div class="col-lg-5 mb-4">
+<!-- Members (two-column layout per row) -->
+<div class="col-lg-6 mb-4">
   <div class="card shadow-sm">
     <div class="card-body">
       <div class="section-title">Members</div>
 
       <!-- DC1 -->
-      <div class="d-flex align-items-center mb-3">
-        <img src="img/xinyu.jpg" alt="Xinyu Zhang" class="member-photo">
-        <span class="badge badge-primary member-badge px-2 py-1 mr-2">DC1</span>
-        <div>
-          <h6 class="mb-0">Xinyu Zhang</h6>
+      <div class="row align-items-center member-row">
+        <div class="col-auto">
+          <img src="assets/img/members/xinyu.jpg" alt="Xinyu Zhang" class="member-photo">
+        </div>
+        <div class="col">
+          <span class="badge badge-primary member-badge px-2 py-1 mb-1">DC1</span>
+          <h6 class="mb-1">Xinyu Zhang</h6>
           <small class="text-muted">Doctoral Course Year 1</small>
         </div>
       </div>
 
       <!-- B4 -->
-      <div class="d-flex align-items-center mb-3">
-        <img src="assets/img/members/kawabata.jpg" alt="Tomohito Kawabata" class="member-photo">
-        <span class="badge badge-success member-badge px-2 py-1 mr-2">B4</span>
-        <div>
-          <h6 class="mb-0">Tomohito Kawabata</h6>
+      <div class="row align-items-center member-row">
+        <div class="col-auto">
+          <img src="assets/img/members/kawabata.jpg" alt="Tomohito Kawabata" class="member-photo">
+        </div>
+        <div class="col">
+          <span class="badge badge-success member-badge px-2 py-1 mb-1">B4</span>
+          <h6 class="mb-1">Tomohito Kawabata</h6>
           <small class="text-muted">Undergraduate Year 4</small>
         </div>
       </div>
 
       <!-- Research Students -->
-      <div class="d-flex align-items-center">
-        <img src="assets/img/members/research.jpg" alt="Research Students" class="member-photo">
-        <span class="badge badge-secondary member-badge px-2 py-1 mr-2">研究生</span>
-        <div>
-          <h6 class="mb-0">Zhuonan Liu, Zishuo Wang</h6>
+      <div class="row align-items-center member-row">
+        <div class="col-auto">
+          <img src="assets/img/members/research.jpg" alt="Research Students" class="member-photo">
+        </div>
+        <div class="col">
+          <span class="badge badge-secondary member-badge px-2 py-1 mb-1">研究生</span>
+          <h6 class="mb-1">Zhuonan Liu, Zishuo Wang</h6>
           <small class="text-muted">Research Students</small>
         </div>
       </div>
@@ -109,15 +116,37 @@
 </div>
 
 <style>
+ .member-photo {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;   /* 圆形头像 */
+  margin-right: 12px;   /* 保持文字和头像之间留白 */
+  display: block;
+}
+
+.member-row {
+  margin-bottom: 1.25rem; /* 行间距更松 */
+}
+
+.member-badge {
+  font-size: .75rem;
+  display: inline-block;
+}
+
+@media (min-width:1200px) {
   .member-photo {
-    width: 48px;
-    height: 48px;
-    object-fit: cover;
-    border-radius: 50%;  /* 圆形头像 */
-    margin-right: 12px;
+    width: 68px;
+    height: 68px;
   }
+  .member-row {
+    margin-bottom: 1.35rem;
+  }
+}
+
 </style>
 
+      
 
       <!-- FOOTER -->
       <footer class="py-4 text-center small">
