@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Collaborators — Ling Xiao</title>
 
-    <!-- 用 CDN 确保 Bootstrap 4 栅格可用；如果你一定要用本地文件，可把下一行换回 assets/css/bootstrap.min.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 
     <style>
@@ -13,18 +12,13 @@
       .navbar-brand { font-weight: 700 }
       .page-title { font-weight: 700; letter-spacing: .3px }
       .card { border-radius: .75rem; }
-      .avatar {
-        width: 84px; height: 84px;
-        border-radius: 12px; object-fit: cover;
-        flex: 0 0 84px; /* 保证左侧头像固定宽度 */
-      }
-      .card-title { font-weight: 700; margin-bottom: .25rem; }
-      .affil { color: #6c757d; margin-bottom: .5rem; }
-      .tag { font-size: .75rem }
-      .link-muted { color: #6c757d }
-      .link-muted:hover { color: #0d6efd; text-decoration: none }
-      /* 让每列左右更有留白（Bootstrap4 没有 g-4，用 padding 实现） */
-      .row.gutter > [class*="col-"] { padding-left: 15px; padding-right: 15px; }
+      .avatar { width:84px;height:84px;border-radius:12px;object-fit:cover;flex:0 0 84px; }
+      .card-title { font-weight:700;margin-bottom:.25rem; }
+      .affil { color:#6c757d;margin-bottom:.5rem; }
+      .tag { font-size:.75rem }
+      .link-muted { color:#6c757d }
+      .link-muted:hover { color:#0d6efd;text-decoration:none }
+      .row.gutter > [class*="col-"] { padding-left:15px;padding-right:15px; }
     </style>
   </head>
 
@@ -54,7 +48,7 @@
         <div class="text-muted">Selected current collaborators</div>
       </div>
 
-      <!-- ✅ 三列网格；每个卡片内部是“左图右文” -->
+      <!-- ✅ 单个 .row 包含所有卡片，Bootstrap 会自动换行为 3+2 -->
       <div class="row gutter">
         <!-- 1 -->
         <div class="col-lg-4 col-md-6 mb-4">
@@ -110,13 +104,12 @@
             </div>
           </div>
         </div>
-      </div>
 
-             <!-- 4 -->
+        <!-- 4 -->
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow-sm p-3">
             <div class="d-flex">
-              <img src="img/konno.jpg" alt="Bin Han" class="avatar mr-3">
+              <img src="img/konno.jpg" alt="Atsushi Konno" class="avatar mr-3">
               <div>
                 <h5 class="card-title">Prof. Atsushi Konno</h5>
                 <div class="affil">Hokkaido University (Hokkaido Univ.), Japan</div>
@@ -129,13 +122,12 @@
             </div>
           </div>
         </div>
-      </div>
 
-                <!-- 5 -->
+        <!-- 5 -->
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100 shadow-sm p-3">
             <div class="d-flex">
-              <img src="img/Linwang.jpg" alt="Bin Han" class="avatar mr-3">
+              <img src="img/Linwang.jpg" alt="Lin Wang" class="avatar mr-3">
               <div>
                 <h5 class="card-title">Assist. Prof. Lin Wang</h5>
                 <div class="affil">Nanyang Technological University (NTU), Singapore</div>
@@ -149,6 +141,7 @@
           </div>
         </div>
       </div>
+      <!-- /row -->
 
       <footer class="py-4 text-center small text-muted">
         © <span id="year"></span> Ling Xiao — Hokkaido University
