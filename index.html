@@ -11,6 +11,7 @@
     <style>
       :root { --brand:#0d6efd; }
       body { line-height:1.6; }
+      /* 胶囊导航，与站内其他页统一 */
       .navbar-wrap{max-width:1200px;margin:1.25rem auto;}
       .navbar.navbar-pill{background:#0d6efd;border-radius:9999px;padding:.6rem 1rem;}
       .navbar.navbar-pill .navbar-brand{color:#fff;font-weight:700;letter-spacing:.2px;}
@@ -24,8 +25,9 @@
       .muted{color:#6c757d;}
       .info-line svg{flex:0 0 16px;margin-right:.5rem;}
       .link-inline a{margin-right:1rem;}
-      .row.gutter > [class*="col-"]{padding-left:15px;padding-right:15px;}
+      .row.gutter > [class*="col-"]{padding-left:15px;padding-right:15px;} /* Bootstrap4 无 g-4，用 padding 实现 */
       footer{color:#6c757d;}
+      /* 可滚动列表的样式微调 */
       .scroll-list{max-height:320px;overflow:auto;}
       .scroll-list li{margin-bottom:.35rem;}
 
@@ -72,8 +74,8 @@
       <!-- INTRO CARD -->
       <div class="card shadow-sm mb-4">
         <div class="card-body">
-          <!-- EmbodAI-LX 标识（新增部分） -->
-          <a class="labmark" href="" target="_blank" rel="noopener">EmbodAI-LX</a>
+          <!-- EmbodAI-LX 标识 -->
+          <a class="labmark" href="https://sail.ist.hokudai.ac.jp/" target="_blank" rel="noopener">EmbodAI-LX</a>
 
           <div class="row align-items-start">
             <div class="col-sm-3 col-md-3 mb-3 mb-sm-0 text-center">
@@ -91,5 +93,83 @@
                 <a href="https://sail.ist.hokudai.ac.jp/" target="_blank" rel="noopener">構造化知能研究室</a>
               </p>
 
-              <!-- 这里以下继续保持你原有的内容，不动 -->
-              ...
+              <p class="mb-3">
+                From 2025.04.01, I join Hokkaido University as an associate professor. From 2023.10.01–2025.03.31, I was a Project Assistant Professor at CVM (Yamasaki Lab), The University of Tokyo, Japan.
+                From 2021.06 to 2023.10, I was a Project Researcher at CVM (Yamasaki Lab), The University of Tokyo, Japan. In 2020.12, I received my Ph.D. degree at
+                <a href="http://english.hust.edu.cn/" target="_blank" rel="noopener">Huazhong University of Science and Technology</a>, P.R. China.
+                From 2018.10 to 2019.11, I was a visiting student at
+                <a href="https://www.uq.edu.au/" target="_blank" rel="noopener">The University of Queensland</a>, Australia.
+                From 2014.07 to 2015.08, I was a mechanical engineer at
+                <a href="https://www.bydglobal.com/" target="_blank" rel="noopener">BYD Company Limited</a>, P.R. China.
+              </p>
+
+              <p class="mb-4">
+                My research interests focus on <strong>multimedia signal processing for intelligent perception and decision-making, efficient multimodal language models, robotic navigations, fine-grained representation learning, continual learning, open-world recognition, adversarial attacks, etc.</strong>.
+              </p>
+              
+              <p class="mb-4">
+              <strong>**Seeking academic–industry collaborations; feel free to reach out.**</strong>
+              </p>
+
+              <!-- Address -->
+              <div class="info-line d-flex align-items-start mb-2">
+                <svg width="16" height="16" viewBox="0 0 16 16" class="muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                </svg>
+                <div>
+                  Faculty of Information Science and Technology, Hokkaido University, 9-9 Kita-14-jo Nishi, Kita-ku, Sapporo, Hokkaido 060-0814, Japan<br>
+                  （〒060-0814 札幌市北区北14条西9丁目 北海道大学 大学院情報科学研究院　情報理工学部門 数理科学分野）
+                </div>
+              </div>
+
+              <!-- Emails -->
+              <div class="info-line d-flex align-items-start mb-2">
+                <svg width="16" height="16" viewBox="0 0 16 16" class="muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg>
+                <div>
+                  ling(at)ist.hokudai.ac.jp, lingxiaodr(at)gmail.com<br>
+                  <strong>Old:</strong> lingxiao(at)hust.edu.cn, ling(at)cvm.t.u-tokyo.ac.jp
+                </div>
+              </div>
+
+              <!-- Links -->
+              <div class="info-line d-flex align-items-center link-inline">
+                <svg width="16" height="16" viewBox="0 0 16 16" class="muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M7.693 1.066a.75.75 0 01.614 0l7.25 3.25a.75.75 0 010 1.368L13 6.831v2.794c0 1.024-.81 1.749-1.66 2.173-.893.447-2.075.702-3.34.702-.278 0-.55-.012-.816-.036a.75.75 0 01.133-1.494c.22.02.45.03.683.03 1.082 0 2.025-.221 2.67-.543.69-.345.83-.682.83-.832V7.503L8.307 8.934a.75.75 0 01-.614 0L4 7.28v1.663c.296.105.575.275.812.512.438.438.688 1.059.688 1.796v3a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75v-3c0-.737.25-1.358.688-1.796.237-.237.516-.407.812-.512V6.606L.443 5.684a.75.75 0 010-1.368l7.25-3.25zM2.583 5L8 7.428 13.416 5 8 2.572 2.583 5zM2.5 11.25c0-.388.125-.611.25-.735a.704.704 0 01.5-.203c.19 0 .37.071.5.203.125.124.25.347.25.735v2.25H2.5v-2.25z"></path>
+                </svg>
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=D4FofdsAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://x.com/Dr_lingxiao" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.facebook.com/profile.php?id=100085571029967" target="_blank" rel="noopener">Facebook</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEWS CARD -->
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h3 class="page-title mb-3">News</h3>
+          <ul class="list-unstyled bg-light border rounded p-3 scroll-list">
+            <li>[ 2025.08 ] I am a 客員研究員 of <a href="https://www.cvm.t.u-tokyo.ac.jp/index.html" target="_blank" rel="noopener">Yamasaki Lab</a>, <a href="https://www.u-tokyo.ac.jp/en/" target="_blank" rel="noopener">The University of Tokyo</a>, from 2025.08.01–2026.07.31.</li>
+            <li>[ 2025.07 ] We will organize a workshop on ‘Data-Driven and AI-Empowered Future of Low-Altitude Economy (DALAE 2025) in WISE 2025’, Dec 15–17, 2025, Morocco. Details <a href="https://wisedalae.github.io/dalae2025/" target="_blank" rel="noopener">here</a>. Deadline: Jul 30.</li>
+            <li>[ 2025.07 ] We achieved Best Paper Award in <a href="https://www.icmr-2025.org/" target="_blank" rel="noopener">ICMR 2025</a>!</li>
+            <li>[ 2025.05 ] I will co-organize a workshop <a href="https://s2ai-bigdata.github.io/" target="_blank" rel="noopener">Secure and Safe AI Agents for Big Data Infrastructures</a> in <a href="https://conferences.cis.um.edu.mo/ieeebigdata2025/" target="_blank" rel="noopener">BigData 2025</a>, Dec 8–11, 2025, Macau.</li>
+            <li>[ 2025.05 ] I will be an Associate Editor for <a href="https://globals.ieice.org/en_transactions/information" target="_blank" rel="noopener">IEICE Transactions on Information and Systems</a>, 2025.06.10–2029.06.07.</li>
+            <li>[ 2025.05 ] Conference Chair of <a href="https://www.apit.net/" target="_blank" rel="noopener">APIT 2026</a> &amp; <a href="https://www.cvci.net/" target="_blank" rel="noopener">CVCI 2026</a>, Jan 9–11, 2026, Hokkaido, Japan.</li>
+            <li>[ 2025.04 ] Selected as IEEE Senior Member.</li>
+            <li>[ 2025.04 ] Hiring JSPS PD… Please feel free to contact me.</li>
+            <li>[ 2025.04 ] Start at <a href="https://www.global.hokudai.ac.jp/" target="_blank" rel="noopener">Hokkaido University</a> as Associate Professor.</li>
+            <li>[ 2025.02 ] Selected as Youth Editorial Board Member of <a href="http://znaq.ijournals.cn/znaq/news/view/20250218082000001" target="_blank" rel="noopener">智能安全</a>.</li>
+            <li>[ 2025.02 ] Invited talk at <a href="https://www.ivsp.net/" target="_blank" rel="noopener">IVSP 2025</a>, “Revolutionizing AI Applications: Innovative Approaches with Multimodal Large Language Models”.</li>
+            <li>[ 2024.09 ] Invited talk at <a href="https://b2b.csoe.org.cn/meeting/CITA2024.html#643_651" target="_blank" rel="noopener">CITA 2024</a>, “Large multimodal model based recommendation systems”.</li>
+            <li>[ 2024.04 ] 若手研究. Project: Efficient and accurate scaling Graph Neural Networks for giant graphs, 2024.04–2026.04, 4,680,000 yen.</li>
+            <li>[ 2024.03 ] Invited talk at 信学技報, MVE, “The Past, Current and Future of Fashion Image Retrieval: Toward a User-Centered Orientation”.</li>
+            <li>[ 2023.11 ] Adjunct Project Assistant Professor at Beyond AI 研究推進機構.</li>
+            <li>[ 2023.10 ] Invited talk at BAI Research Seminar, “Affordable and advanced artificial intelligence in fashion”.</li>
+            <li>[ 2023.10 ] Project Assistant Professor, Computer Vision and Media Lab, The University of Tokyo.</li>
+            <li>[ 2022.09 ] Received AIセンター融合研究促進費. “Explainable Recommendations AI”, 2022.10–2023.04, 2,000,000 yen.</li>
+            <li>[ 2022.07 ] Adjunct researcher at Beyond AI 研究推進機構 (“メ
