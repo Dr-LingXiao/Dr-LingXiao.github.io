@@ -37,7 +37,7 @@
       }
       .card { border-radius:.75rem; }
       .row.gutter > [class*="col-"] {
-        padding-left:15px; padding-right:15px; /* Bootstrap4 replacement for g-4 */
+        padding-left:15px; padding-right:15px;
       }
 
       footer { color:#6c757d; }
@@ -48,23 +48,19 @@
       .activity-date { font-weight:600; color:#0d6efd; font-size:.95rem; }
 
       .activity-title { font-size:1rem; font-weight:600; }
-      .activity-meta { font-size:0.9rem; color:#6c757d; }
 
       .activity-gallery img {
         border-radius:.5rem;
-        display:block;
         width:100%;
         height:auto;
+        display:block;
         object-fit:cover;
       }
       .activity-gallery > [class*="col-"] {
         margin-bottom:.5rem;
       }
-
       @media (min-width: 768px) {
-        .activity-gallery > [class*="col-"] {
-          margin-bottom:0;
-        }
+        .activity-gallery > [class*="col-"] { margin-bottom:0; }
       }
     </style>
   </head>
@@ -89,7 +85,7 @@
               <li class="nav-item"><a class="nav-link" href="activity.html">Services</a></li>
               <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
               <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
-              <li class="nav-item active"><a class="nav-link" href="lab_activities.html">Lab Activities</a></li>
+              <li class="nav-item active"><a class="nav-link" href="lab-activities.html">Lab Activities</a></li>
             </ul>
           </div>
         </nav>
@@ -119,9 +115,7 @@
                   <div class="activity-title mb-3">
                     Visit of Prof. Zhu Li (University of Missouri)
                   </div>
-                  <!-- <div class="activity-meta mb-2">
-                    Structured Intelligence Lab, Hokkaido University
-                  </div> -->
+
                   <p class="mb-3">
                     On 2025.11.24, Prof. Zhu Li from the University of Missouri gave a talk titled
                     <em>&ldquo;Sparse Feature Pyramid Recovery for Vision Tasks under Adverse Imaging Conditions&rdquo;</em>
@@ -129,7 +123,7 @@
                     projects on robust perception and intelligent robotic systems.
                   </p>
 
-                  <!-- ---------- Image gallery: all photos together, no per-image captions ---------- -->
+                  <!-- ---------- Image gallery: all images together ---------- -->
                   <div class="activity-gallery row no-gutters">
                     <div class="col-4 pr-1">
                       <img src="img/2025-11-24.jpg" alt="Lab activity photo 1">
