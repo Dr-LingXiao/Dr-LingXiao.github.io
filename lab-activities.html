@@ -1,57 +1,171 @@
-<div class="section-title">2025</div>
-<div class="row gutter mb-3">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ling Xiao — Lab Activities</title>
 
-  <!-- Zhu Li invited talk -->
-  <div class="col-md-6 mb-3">
-    <div class="talk-card">
-      <div class="talk-header">
-        <div class="talk-date">2025.11.24</div>
-        <span class="talk-tag talk-tag-invited">Invited Talk</span>
-      </div>
-      <div class="talk-title">
-        Sparse Feature Pyramid Recovery for Vision Tasks under Adverse Imaging Conditions
-      </div>
-      <div class="talk-meta">
-        Prof. Zhu Li, University of Missouri, USA &mdash; Structured Intelligence Lab, Hokkaido University
-      </div>
-      <p class="talk-desc">
-        On 2025.11.24, Prof. Zhu Li from the University of Missouri gave a talk titled
-        <em>&ldquo;Sparse Feature Pyramid Recovery for Vision Tasks under Adverse Imaging Conditions&rdquo;</em>
-        to my lab. We discussed future collaborations and student exchanges, including potential joint
-        projects on robust perception and intelligent robotic systems.
-      </p>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          crossorigin="anonymous">
 
-      <!-- Figures block -->
-      <div class="talk-figures row no-gutters">
-        <div class="col-6 pr-1 mb-2">
-          <figure class="talk-figure">
-            <img src="img/talks/zhu_li_talk_1.jpg"
-                 alt="Prof. Zhu Li giving a talk in our lab"
-                 class="img-fluid">
-            <figcaption>Prof. Zhu Li giving the talk.</figcaption>
-          </figure>
-        </div>
-        <div class="col-6 pl-1 mb-2">
-          <figure class="talk-figure">
-            <img src="img/2025-11-24.jpg"
-              <img src="img/2025-11-24-2.jpg"
-              <img src="img/2025-11-24-3.jpg"
-                 alt="Discussion about future collaborations and student exchanges"
-                 class="img-fluid">
-            <figcaption>Discussion on future collaboration and student exchanges.</figcaption>
-          </figure>
-        </div>
-        <div class="col-12 mt-1">
-          <figure class="talk-figure">
-            <img src="img/talks/2025-11-24.jpg"
-                 alt="Group photo with Prof. Zhu Li"
-                 class="img-fluid">
-            <figcaption>Group photo with lab members after the talk.</figcaption>
-          </figure>
-        </div>
+    <style>
+      :root { --brand: #0d6efd; }
+      body { line-height: 1.6; }
+
+      /* ---------- Pill Navbar (统一风格) ---------- */
+      .navbar-wrap { max-width: 1200px; margin: 1.25rem auto; }
+      .navbar.navbar-pill {
+        background:#0d6efd;
+        border-radius:9999px;
+        padding:.6rem 1rem;
+      }
+      .navbar.navbar-pill .navbar-brand {
+        color:#fff; font-weight:700; letter-spacing:.2px;
+      }
+      .navbar.navbar-pill .nav-link { color:rgba(255,255,255,.9); }
+      .navbar.navbar-pill .nav-item.active .nav-link,
+      .navbar.navbar-pill .nav-link:hover { color:#fff; }
+
+      /* ---------- General Page Style ---------- */
+      .page-title { font-weight:700; letter-spacing:.3px; }
+      .section-title {
+        font-weight:700; font-size:1.1rem;
+        letter-spacing:.3px; text-transform:uppercase;
+        color:#6c757d; margin-bottom:.75rem;
+      }
+      .card { border-radius:.75rem; }
+      .row.gutter > [class*="col-"] {
+        padding-left:15px; padding-right:15px; /* Bootstrap4 replacement for g-4 */
+      }
+
+      footer { color:#6c757d; }
+
+      /* ---------- Lab Activity Styles ---------- */
+      .activity-card { border-radius:.75rem; }
+      .activity-header { margin-bottom:.4rem; }
+      .activity-date { font-weight:600; color:#0d6efd; font-size:.95rem; }
+
+      .activity-title { font-size:1rem; font-weight:600; }
+      .activity-meta { font-size:0.9rem; color:#6c757d; }
+
+      .activity-gallery img {
+        border-radius:.5rem;
+        display:block;
+        width:100%;
+        height:auto;
+        object-fit:cover;
+      }
+      .activity-gallery > [class*="col-"] {
+        margin-bottom:.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .activity-gallery > [class*="col-"] {
+          margin-bottom:0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" style="max-width:1180px;">
+
+      <!-- ---------- NAVBAR ---------- -->
+      <div class="navbar-wrap">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-pill shadow-sm">
+          <a class="navbar-brand" href="index.html">Ling Xiao</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                  aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-3">
+              <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
+              <li class="nav-item"><a class="nav-link" href="honor.html">Honors &amp; Funding</a></li>
+              <li class="nav-item"><a class="nav-link" href="activity.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+              <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+              <li class="nav-item active"><a class="nav-link" href="lab_activities.html">Lab Activities</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
 
+      <!-- ---------- PAGE TITLE ---------- -->
+      <h1 class="page-title mb-4">Lab Activities</h1>
+
+      <!-- ---------- CONTENT ---------- -->
+      <div class="row gutter">
+
+        <div class="col-lg-12 mb-4">
+
+          <!-- ========== 2025 Section ========== -->
+          <div class="section-title">2025</div>
+          <div class="row gutter mb-3">
+
+            <!-- One lab activity block -->
+            <div class="col-md-8 mb-4">
+              <div class="card shadow-sm activity-card">
+                <div class="card-body">
+
+                  <div class="activity-header d-flex align-items-center mb-2">
+                    <div class="activity-date mr-2">2025.11.24</div>
+                  </div>
+
+                  <div class="activity-title mb-1">
+                    Visit of Prof. Zhu Li (University of Missouri)
+                  </div>
+
+                  <div class="activity-meta mb-2">
+                    Structured Intelligence Lab, Hokkaido University
+                  </div>
+
+                  <p class="mb-3">
+                    On 2025.11.24, Prof. Zhu Li from the University of Missouri gave a talk titled
+                    <em>&ldquo;Sparse Feature Pyramid Recovery for Vision Tasks under Adverse Imaging Conditions&rdquo;</em>
+                    to my lab. We discussed future collaborations and student exchanges, including potential joint
+                    projects on robust perception and intelligent robotic systems.
+                  </p>
+
+                  <!-- ---------- Image gallery: all photos together, no per-image captions ---------- -->
+                  <div class="activity-gallery row no-gutters">
+                    <div class="col-4 pr-1">
+                      <img src="img/2025-11-24-1.jpg" alt="Lab activity photo 1">
+                    </div>
+                    <div class="col-4 px-1">
+                      <img src="img/2025-11-24-2.jpg" alt="Lab activity photo 2">
+                    </div>
+                    <div class="col-4 pl-1">
+                      <img src="img/2025-11-24-3.jpg" alt="Lab activity photo 3">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ---------- FOOTER ---------- -->
+      <footer class="py-4 text-center small">
+        © <span id="year"></span> Ling Xiao — Hokkaido University
+      </footer>
     </div>
-  </div>
 
-</div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+  </body>
+</html>
