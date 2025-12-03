@@ -69,24 +69,34 @@
      
 
   
-   <!-- Members (Grouped Grid Layout) -->
+  <!-- Members (Grouped Grid Layout) -->
 <div class="col-lg-10 mb-4">
   <div class="card shadow-sm">
     <div class="card-body">
       <div class="section-title">Members</div>
+
+      <!-- 🔵 统一邮箱后缀说明 -->
+      <p class="text-muted small mb-3">
+        * Email domain: <code>@elms.hokudai.ac.jp</code> — only prefixes are shown below.
+      </p>
 
       <!-- === DC1 === -->
       <div class="d-flex align-items-center mb-2">
         <span class="badge badge-primary member-badge px-2 py-1">DC1</span>
         <small class="text-muted ml-2">Doctoral Course</small>
       </div>
+
       <div class="row justify-content-start">
         <!-- Xinyu Zhang -->
         <div class="col-6 col-sm-4 col-md-3 mb-4">
           <div class="member-tile text-center">
             <img src="img/xinyu.jpg" alt="Xinyu Zhang" class="member-avatar">
             <div class="member-name">Xinyu Zhang (Hokkaido University EXEX Doctoral Fellowship)</div>
-            <div class="member-email">xinyu.zhang.y3@elms.hokudai.ac.jp</div>
+
+            <!-- email prefix only -->
+            <a class="member-email" href="mailto:xinyu.zhang.y3@elms.hokudai.ac.jp">
+              xinyu.zhang.y3
+            </a>
           </div>
         </div>
       </div>
@@ -96,13 +106,18 @@
         <span class="badge badge-success member-badge px-2 py-1">B4</span>
         <small class="text-muted ml-2">Undergraduate</small>
       </div>
+
       <div class="row justify-content-start">
         <!-- Tomohito Kawabata -->
         <div class="col-6 col-sm-4 col-md-3 mb-4">
           <div class="member-tile text-center">
             <img src="img/kawabata.jpg" alt="Tomohito Kawabata" class="member-avatar">
             <div class="member-name">Tomohito Kawabata</div>
-            <div class="member-email">kawabata.tomohito.m4@elms.hokudai.ac.jp</div>
+
+            <!-- email prefix only -->
+            <a class="member-email" href="mailto:kawabata.tomohito.m4@elms.hokudai.ac.jp">
+              kawabata.tomohito.m4
+            </a>
           </div>
         </div>
       </div>
@@ -112,21 +127,31 @@
         <span class="badge badge-secondary member-badge px-2 py-1">研究生</span>
         <small class="text-muted ml-2">Research Students</small>
       </div>
+
       <div class="row justify-content-start">
         <!-- Zhuonan Liu -->
         <div class="col-6 col-sm-4 col-md-3 mb-4">
           <div class="member-tile text-center">
             <img src="img/zhuonan2.jpg" alt="Zhuonan Liu" class="member-avatar">
             <div class="member-name">Zhuonan Liu</div>
-            <div class="member-email">zhuonan.liu.x0@elms.hokudai.ac.jp</div>
+            
+            <!-- email prefix only -->
+            <a class="member-email" href="mailto:zhuonan.liu.x0@elms.hokudai.ac.jp">
+              zhuonan.liu.x0
+            </a>
           </div>
         </div>
+
         <!-- Zishuo Wang -->
         <div class="col-6 col-sm-4 col-md-3 mb-4">
           <div class="member-tile text-center">
             <img src="img/zishuo.jpg" alt="Zishuo Wang" class="member-avatar">
             <div class="member-name">Zishuo Wang</div>
-            <div class="member-email">zishuo.wang.l5@elms.hokudai.ac.jp</div>
+
+            <!-- email prefix only -->
+            <a class="member-email" href="mailto:zishuo.wang.l5@elms.hokudai.ac.jp">
+              zishuo.wang.l5
+            </a>
           </div>
         </div>
       </div>
@@ -136,6 +161,57 @@
 </div>
 
 <style>
+/* Members grid: avatar on top, name below */
+.member-avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: .95rem;
+  line-height: 1.2;
+}
+
+.member-badge {
+  font-size: .75rem;
+}
+
+.member-tile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 美观的 email 样式（只显示前缀） */
+.member-email {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #6c757d;
+  text-decoration: none;
+  word-break: break-all;
+  display: block;
+}
+
+.member-email:hover {
+  text-decoration: underline;
+  color: #0d6efd;
+}
+
+@media (min-width:1200px) {
+  .member-avatar {
+    width: 92px;
+    height: 92px;
+  }
+}
+</style>
+
 /* Members grid: avatar on top, name below */
 .member-avatar {
   width: 86px;
