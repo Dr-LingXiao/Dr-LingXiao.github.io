@@ -7,12 +7,13 @@
 
     <title>Ling Xiao — Homepage</title>
 
-    <!-- Bootstrap 4（如需本地文件可改回 assets/css/bootstrap.min.css） -->
+    <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 
     <style>
       :root { --brand:#0d6efd; }
       body { line-height:1.6; }
+
       /* 胶囊导航，与站内其他页统一 */
       .navbar-wrap{max-width:1200px;margin:1.25rem auto;}
       .navbar.navbar-pill{background:#0d6efd;border-radius:9999px;padding:.6rem 1rem;}
@@ -27,40 +28,32 @@
       .muted{color:#6c757d;}
       .info-line svg{flex:0 0 16px;margin-right:.5rem;}
       .link-inline a{margin-right:1rem;}
-      .row.gutter > [class*="col-"]{padding-left:15px;padding-right:15px;} /* Bootstrap4 无 g-4，用 padding 实现 */
+      .row.gutter > [class*="col-"]{padding-left:15px;padding-right:15px;}
       footer{color:#6c757d;}
-      /* 可滚动列表的样式微调 */
       .scroll-list{max-height:320px;overflow:auto;}
       .scroll-list li{margin-bottom:.35rem;}
 
-      /* --- Lab 标识（卡片右上角） --- */
+      /* --- Lab 标识（卡片右上角 Logo） --- */
       .card .card-body { position: relative; }
+
       .labmark {
         position: absolute;
         top: 12px;
         right: 16px;
-        font-weight: 700;
-        font-size: 2.0rem;
-        color: var(--brand);
+        display: inline-block;
+        animation: glow 2s ease-in-out infinite alternate;
         text-decoration: none;
-        white-space: nowrap;
-        animation: glow 2s ease-in-out infinite alternate; /* 动画效果 */
       }
-      /* 动态发光效果 */
-      <a class="labmark" href="#">
-  <img src="assets/img/LOGO.png" class="labmark-img">
-</a>
-      
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #0d6efd, 0 0 10px #0d6efd;
-    color: #0d6efd;
-  }
-  to {
-    text-shadow: 0 0 15px #1e90ff, 0 0 30px #1e90ff;
-    color: #66b2ff;
-  }
-}
+
+      .labmark-img {
+        height: 48px; 
+        width: auto;
+      }
+
+      @keyframes glow {
+        from { filter: drop-shadow(0 0 5px #0d6efd); }
+        to   { filter: drop-shadow(0 0 15px #66b2ff); }
+      }
     </style>
   </head>
 
@@ -93,28 +86,32 @@
       <!-- INTRO CARD -->
       <div class="card shadow-sm mb-4">
         <div class="card-body">
-          <!-- <!-- EmbodAI-LX 标识 -->
-          <!-- <a class="labmark" href="" target="_blank" rel="noopener">EmbodAI-LX</a> --> -->
 
-       
+          <!-- 🔵 Lab Logo（右上角） -->
+          <a class="labmark" href="#">
+            <img src="assets/img/LOGO.png" class="labmark-img">
+          </a>
+
           <div class="row align-items-start">
             <div class="col-sm-3 col-md-3 mb-3 mb-sm-0 text-center">
               <img src="img/ling1.jpg" alt="Ling Xiao" class="avatar img-fluid">
             </div>
             <div class="col-sm-9 col-md-9">
               <h2 class="mb-2">Ling Xiao (PI of MARS Lab)</h2>
+
               <p class="mb-2">
                 <strong>Tenured Associate Professor（准教授 / 副教授）</strong> at
                 <a href="https://www.global.hokudai.ac.jp/" target="_blank" rel="noopener">Hokkaido University (北海道大学)</a><br>
                 客員研究員 in <a href="https://www.cvm.t.u-tokyo.ac.jp/index.html" target="_blank" rel="noopener">Yamasaki Lab</a>,
                 <a href="https://www.u-tokyo.ac.jp/en/" target="_blank" rel="noopener">The University of Tokyo (東京大学)</a><br>
                 IEEE Senior Member<br>
-               
               </p>
 
               <p class="mb-3">
-                From 2025.04.01, I joined Hokkaido University as an associate professor and lead Multimodal Agent & Robotic System (MARS) Lab. From 2023.10.01–2025.03.31, I was a Project Assistant Professor at CVM (Yamasaki Lab), The University of Tokyo, Japan.
-                From 2021.06 to 2023.10, I was a Project Researcher at CVM (Yamasaki Lab), The University of Tokyo, Japan. In 2020.12, I received my Ph.D. degree at
+                From 2025.04.01, I joined Hokkaido University as an associate professor and lead Multimodal Agent & Robotic System (MARS) Lab. 
+                From 2023.10.01–2025.03.31, I was a Project Assistant Professor at CVM (Yamasaki Lab), The University of Tokyo, Japan.
+                From 2021.06 to 2023.10, I was a Project Researcher at CVM (Yamasaki Lab), The University of Tokyo, Japan. 
+                In 2020.12, I received my Ph.D. degree at
                 <a href="http://english.hust.edu.cn/" target="_blank" rel="noopener">Huazhong University of Science and Technology</a>, P.R. China.
                 From 2018.10 to 2019.11, I was a visiting student at
                 <a href="https://www.uq.edu.au/" target="_blank" rel="noopener">The University of Queensland</a>, Australia.
@@ -125,11 +122,10 @@
               <p class="mb-4">
                 My research interests focus on <strong>Multimodal Processing, Fine-grained Anomaly and Similarity Detection, Intelligent Perception and Decision-making, Efficient Multimodal Large Language Models, Robotic Navigations, Machine Learning (continual learning, open-world recognition, adversarial attacks, etc.)</strong>.
               </p>
-              
 
               <!-- Address -->
               <div class="info-line d-flex align-items-start mb-2">
-                <svg width="16" height="16" viewBox="0 0 16 16" class="muted" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" class="muted" fill="currentColor">
                   <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
                   <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                 </svg>
