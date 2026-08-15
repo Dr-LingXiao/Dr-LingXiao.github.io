@@ -56,25 +56,40 @@
       }
      /* ===== Research Interests ===== */
 
+/* ===== Research Interests ===== */
+
 .research-interests-block {
   margin-top: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
-.research-interest-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
-  row-gap: 5px;
-  padding-left: 8px;
-  font-size: 0.96rem;
+.research-heading {
+  font-weight: 700;
+  margin-bottom: 9px;
 }
 
-.muted-small {
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 9px;
+}
+
+.research-tags span {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #f3f7ff;
+  border: 1px solid #d9e6ff;
+  border-radius: 999px;
+  font-size: 0.91rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.research-subtopics {
+  margin-top: 7px;
+  font-size: 0.84rem;
   color: #6c757d;
-  font-size: 0.9rem;
 }
-
 
 /* ===== Featured Research Videos ===== */
 
@@ -187,42 +202,24 @@
               </p>
 
 
-       <!-- Research Interests -->
+<!-- Research Interests -->
 <div class="research-interests-block">
 
-  <p class="mb-2">
-    <strong>My research interests focus on:</strong>
+  <p class="research-heading">
+    My research interests focus on:
   </p>
 
-  <div class="research-interest-grid">
+  <div class="research-tags">
+    <span>Adaptive Intelligent Systems in Complex & Dynamic Environments</span>
+    <span>Robotic AI</span>
+    <span>Multimodal Vision-Language Models</span>
+    <span>Recommendation Systems</span>
+    <span>Fine-grained Detection</span>
+    <span>Machine Learning</span>
+  </div>
 
-    <div>
-      • <strong>Adaptive Intelligent Systems Operating in Complex and Dynamic Environments</strong>
-    </div>
-
-    <div>
-      • <strong>Robotic AI</strong>
-    </div>
-
-    <div>
-      • <strong>Multimodal Vision Language Models</strong>
-    </div>
-
-    <div>
-      • <strong>Recommendation Systems</strong>
-    </div>
-
-    <div>
-      • <strong>Fine-grained Detection</strong>
-    </div>
-
-    <div>
-      • <strong>Machine Learning</strong>
-      <span class="muted-small">
-        (continual learning, open-world recognition, adversarial attacks, etc.)
-      </span>
-    </div>
-
+  <div class="research-subtopics">
+    Continual Learning · Open-world Recognition · Adversarial Learning
   </div>
 
 </div>
