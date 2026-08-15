@@ -54,23 +54,35 @@
         from { filter: drop-shadow(0 0 5px #0d6efd); }
         to   { filter: drop-shadow(0 0 15px #66b2ff); }
       }
-      /* Research interests + two videos */
-.research-section {
-  display: flex;
-  align-items: flex-start;
-  gap: 25px;
+     /* ===== Research Interests ===== */
+
+.research-interests-block {
+  margin-top: 8px;
   margin-bottom: 18px;
 }
 
-.research-interests {
-  flex: 0 0 42%;
+.research-interest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 5px;
+  padding-left: 8px;
+  font-size: 0.96rem;
 }
 
+.muted-small {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+
+/* ===== Featured Research Videos ===== */
+
 .research-videos {
-  flex: 1;
   display: flex;
-  gap: 12px;
-  align-items: flex-start;
+  gap: 22px;
+  width: 100%;
+  margin-bottom: 22px;
 }
 
 .research-video-item {
@@ -79,37 +91,35 @@
 }
 
 .research-video-title {
-  font-size: 0.88rem;
+  text-align: center;
+  font-size: 1rem;
   font-weight: 700;
   color: #0d6efd;
-  text-align: center;
-  margin-bottom: 5px;
-  line-height: 1.3;
+  margin-bottom: 7px;
 }
 
 .research-video-item video {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 8px;
   display: block;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
-/* 手机端 */
-@media (max-width: 768px) {
-  .research-section {
-    flex-direction: column;
-  }
 
-  .research-interests {
-    width: 100%;
-    flex: none;
+/* Mobile */
+@media (max-width: 768px) {
+
+  .research-interest-grid {
+    grid-template-columns: 1fr;
   }
 
   .research-videos {
-    width: 100%;
+    flex-direction: column;
   }
+
 }
     </style>
   </head>
@@ -176,54 +186,82 @@
                 <a href="https://www.bydglobal.com/" target="_blank" rel="noopener">BYD Company Limited</a>, P.R. China.
               </p>
 
-<div class="research-section">
 
-  <!-- 左边：研究兴趣 -->
-  <div class="research-interests">
-    <p class="mb-1">My research interests focus on:</p>
+       <!-- Research Interests -->
+<div class="research-interests-block">
 
-    <ul class="mt-0 mb-2">
-      <li class="mb-1"><strong>Adaptive Intelligent Systems Operating in Complex and Dynamic Environments</strong></li>
-      <li class="mb-1"><strong>Recommendation Systems</strong></li>
-      <li class="mb-1"><strong>Robotic AI</strong></li>
-      <li class="mb-1"><strong>Fine-grained Detection</strong></li>
-      <li class="mb-1"><strong>Multimodal Vision Language Models</strong></li>
-      <li class="mb-1"><strong>Machine Learning (continual learning, open-world recognition, adversarial attacks, etc.)</strong></li>
-    </ul>
-  </div>
+  <p class="mb-2">
+    <strong>My research interests focus on:</strong>
+  </p>
 
+  <div class="research-interest-grid">
 
-  <!-- 右边：两个视频横向排列 -->
-  <div class="research-videos">
-
-    <div class="research-video-item">
-      <div class="research-video-title">
-        Robotic AI & Social Navigation
-      </div>
-
-      <video controls preload="metadata">
-        <source src="img/social_navigation.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div>
+      • <strong>Adaptive Intelligent Systems Operating in Complex and Dynamic Environments</strong>
     </div>
 
+    <div>
+      • <strong>Robotic AI</strong>
+    </div>
 
-    <div class="research-video-item">
-      <div class="research-video-title">
-        Multimodal AI & Long Video Generation
-      </div>
+    <div>
+      • <strong>Multimodal Vision Language Models</strong>
+    </div>
 
-      <video controls preload="metadata">
-        <source src="img/ours.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div>
+      • <strong>Recommendation Systems</strong>
+    </div>
+
+    <div>
+      • <strong>Fine-grained Detection</strong>
+    </div>
+
+    <div>
+      • <strong>Machine Learning</strong>
+      <span class="muted-small">
+        (continual learning, open-world recognition, adversarial attacks, etc.)
+      </span>
     </div>
 
   </div>
 
 </div>
 
-          
+
+<!-- Featured Research Directions -->
+<div class="research-videos">
+
+  <!-- Direction 1 -->
+  <div class="research-video-item">
+
+    <div class="research-video-title">
+      Robotic AI & Social Navigation
+    </div>
+
+    <video controls preload="metadata">
+      <source src="img/social_navigation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+
+
+  <!-- Direction 2 -->
+  <div class="research-video-item">
+
+    <div class="research-video-title">
+      Multimodal AI & Long Video Generation
+    </div>
+
+    <video controls preload="metadata">
+      <source src="img/ours.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+
+</div>
+              
 <!-- <p class="mb-1">My research interests focus on:</p>
 
 <ul class="mt-0 mb-2">
